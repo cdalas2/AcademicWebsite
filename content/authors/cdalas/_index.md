@@ -5,7 +5,7 @@ title: Carlos D. Alas
 superuser: true
 
 # Role/position/tagline
-role: Doctoral Research Assistant in Biophysics
+role: Doctoral Research Assistant of Biophysics
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -69,6 +69,6 @@ email: ''
 highlight_name: true
 ---
 
-Carlos Alas is a doctoral research assistant in biophysics in the Haselwandter research group at University of Southern California. His research interests include membrane-protein interactions, protein organization, and bacteria mechanics. His work currently consists of modeling the impact of protein shape on bilayer deformations, temperature sensing of cells through protein-membrane interactions, and the role of protein organization in muscle degenerative diseases.
+Carlos Alas is a doctoral research assistant of biophysics in the Haselwandter research group at University of Southern California. His research interests include membrane-protein interactions, protein organization, and bacteria mechanics. His work currently consists of modeling the impact of protein shape on bilayer deformations, temperature sensing of cells through protein-membrane interactions, and the role of protein organization in muscle degenerative diseases.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
