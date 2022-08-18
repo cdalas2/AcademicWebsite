@@ -45,7 +45,7 @@ footer:
   copyright:
     notice: '© {year} Carlos D. Alas. Powered by [Hugo](https://gohugo.io) & [Wowchemy](https://wowchemy.com), a fork of [Academic Resume](https://github.com/wowchemy/starter-hugo-academic)'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
