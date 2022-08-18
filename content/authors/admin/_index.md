@@ -1,12 +1,9 @@
 ---
 title: Nelson Bighetti
-<<<<<<< HEAD
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position/tagline
-=======
->>>>>>> 70440d456f3ad0458cb2d5720f0c416e9de8bebf
 role: Professor of Artificial Intelligence
 bio: My research interests include distributed robotics, mobile computing and
   programmable matter.
