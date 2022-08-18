@@ -20,8 +20,8 @@ bio: My research interests include membrane-protein interactions, protein organi
 # Interests to show in About widget
 interests:
   - Membrane Physics
-  - Data Science
   - Bacteria Dynamics
+  - Data Science
   - High Performance Computing
 
 # Education to show in About widget
