@@ -43,7 +43,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Carlos D. Alas. Powered by [Hugo](https://gohugo.io) & [Wowchemy](https://wowchemy.com), a fork of [Academic Resume](https://github.com/wowchemy/starter-hugo-academic)'
+    notice: '© {year} Carlos D. Alas. Powered by [Hugo](https://gohugo.io) & [Wowchemy](https://wowchemy.com), a fork of [Academic Resume](https://github.com/wowchemy/starter-hugo-academic).'
     license:
       enable: false
       allow_derivatives: false
@@ -74,7 +74,7 @@ features:
     content_dir: content
     branch: master
   avatar:
-    gravatar: true
+    gravatar: false
     shape: square
   comment:
     provider: ''
