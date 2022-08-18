@@ -11,7 +11,7 @@ weight: 40
 
 title: Experience
 subtitle:
-
+draft: true
 # Date format for experience
 #   Refer to https://wowchemy.com/docs/customization/#date-format
 date_format: Jan 2006
@@ -31,7 +31,7 @@ experience:
     date_end: ''
     description: |2-
         Responsibilities include:
-        
+
         * Analysing
         * Modelling
         * Deploying

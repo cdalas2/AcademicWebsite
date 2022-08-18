@@ -11,7 +11,7 @@ weight: 60
 
 title: Recent Posts
 subtitle:
-
+draft: true
 content:
   # Filter on criteria
   filters:
