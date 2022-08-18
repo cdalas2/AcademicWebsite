@@ -1,7 +1,7 @@
 ---
 # Display name
 title: Nelson Bighetti
-
+image: 'AuthorImage.jpeg'
 # Is this the primary user of the site?
 superuser: true
 
