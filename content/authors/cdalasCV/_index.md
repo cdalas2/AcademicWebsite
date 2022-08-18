@@ -5,7 +5,7 @@ title: Carlos D. Alas
 superuser: true
 
 # Role/position/tagline
-role: Doctoral Research Assistant of Biophysics
+role: PhD Physics Candidate and MS Computer Science Student
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -16,26 +16,6 @@ organizations:
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include membrane-protein interactions, protein organization, and bacteria mechanics.
-
-# Interests to show in About widget
-interests:
-  - Membrane Physics
-  - Bacteria Dynamics
-  - Data Science
-  - High Performance Computing
-
-# Education to show in About widget
-#education:
-#  courses:
-#    - course: PhD in Physics
-#      institution: University of Southern California
-#      year: Expected 2023 Graduation
-#    - course: MSc in Computer Science High Performance Computing
-#      institution: University of Southern California
-#      year: Expected 2023 Graduation
-#    - course: BSc Physics w/ Minor in Mathematics
-#      institution: California Polytechnic State University, San Luis Obispo
-#      year: 2017
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons

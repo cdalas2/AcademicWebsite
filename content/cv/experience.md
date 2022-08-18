@@ -5,13 +5,11 @@ widget: experience
 
 # This file represents a page section.
 headless: true
-
 # Order that this section appears on the page.
-weight: 40
+weight: 10
 
 title: Experience
 subtitle:
-draft: true
 # Date format for experience
 #   Refer to https://wowchemy.com/docs/customization/#date-format
 date_format: Jan 2006
@@ -47,4 +45,6 @@ experience:
 
 design:
   columns: '2'
+
+
 ---
