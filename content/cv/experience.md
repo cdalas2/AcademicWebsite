@@ -1,15 +1,17 @@
 ---
-# An instance of the Experience widget.
+# An instance of the Experience Two Column widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
-widget: experience
+widget: github.Chrede88.experience-two-column
 
 # This file represents a page section.
 headless: true
+
 # Order that this section appears on the page.
 weight: 10
 
 title: Experience
 subtitle:
+
 # Date format for experience
 #   Refer to https://wowchemy.com/docs/customization/#date-format
 date_format: Jan 2006
@@ -19,7 +21,10 @@ date_format: Jan 2006
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-experience:
+primary_title: Primary Experiences
+other_title: Other Experiences
+
+primary:
   - title: CEO
     company: GenCoin
     company_url: ''
@@ -43,8 +48,39 @@ experience:
     date_end: '2020-12-31'
     description: Taught electronic engineering and researched semiconductor physics.
 
+other:
+  - title: CTO
+    company: GenCoin
+    company_url: ''
+    company_logo: org-gc
+    location: California
+    date_start: '2021-01-01'
+    date_end: ''
+    description: |2-
+        Responsibilities include:
+
+        * Analysing
+        * Modelling
+        * Deploying
+
+  - title: Professor of Superconductor Physics
+    company: University Y
+    company_url: ''
+    company_logo: org-x
+    location: California
+    date_start: '2016-01-01'
+    date_end: '2020-12-31'
+    description: Taught electronic engineering and researched semiconductor physics.
+
+  - title: Professor of Biologi
+    company: University Z
+    company_url: ''
+    company_logo: org-x
+    location: California
+    date_start: '2016-01-01'
+    date_end: '2020-12-31'
+    description: Taught electronic engineering and researched semiconductor physics.
+
 design:
-  columns: '2'
-
-
+  columns: '1'
 ---

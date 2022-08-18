@@ -1,28 +1,28 @@
 ---
 # Display name
-title: Carlos D. Alas
+title: About Me
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Doctoral Research Assistant of Biophysics
+#role: Doctoral Research Assistant of Biophysics
 
 # Organizations/Affiliations to show in About widget
-organizations:
-  - name: University of Southern California
-    url: https://www.usc.edu/
-  - name: Haselwandter Research Group
-    url: https://www.haselwandterlab.com/PhD-students-and-postdocs
+#organizations:
+# - name: University of Southern California
+#    url: https://www.usc.edu/
+#  - name: Haselwandter Research Group
+#    url: https://www.haselwandterlab.com/PhD-students-and-postdocs
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include membrane-protein interactions, protein organization, and bacteria mechanics.
 
 # Interests to show in About widget
-interests:
-  - Membrane Physics
-  - Bacteria Dynamics
-  - Data Science
-  - High Performance Computing
+#interests:
+#  - Membrane Physics
+#  - Bacteria Dynamics
+#  - Data Science
+#  - High Performance Computing
 
 # Education to show in About widget
 #education:
@@ -44,7 +44,7 @@ interests:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
+    link: '/contact/'
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
     link: ''
@@ -63,7 +63,7 @@ social:
 #   link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: 'calas@usc.edu'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
