@@ -27,15 +27,15 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: PhD in Physics
+      institution: University of Southern California
+      year: Expected 2023 Graduation
+    - course: MSc in Computer Science High Performance Computing
+      institution: University of Southern California
+      year: Expected 2023 Graduation
+    - course: BSc Physics w/ Minor in Mathematics
+      institution: California Polytechnic State University, San Luis Obispo
+      year: 2017
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -47,7 +47,7 @@ social:
     link: '/#contact'
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: ''
   - icon: github
     icon_pack: fab
     link: https://github.com/cdalas2
@@ -69,6 +69,6 @@ email: ''
 highlight_name: true
 ---
 
-Nelson Bighetti is a doctoral research assistant in biophysics in the Haselwandter research group at University of Southern California. His research interests include membrane-protein interactions, protein organization, and bacteria mechanics. His work currently consists of modeling the impact of protein shape on bilayer deformations, temperature sensing of cells through protein-membrane interactions, and the role of protein organization in muscle degenerative diseases.
+Carlos Alas is a doctoral research assistant in biophysics in the Haselwandter research group at University of Southern California. His research interests include membrane-protein interactions, protein organization, and bacteria mechanics. His work currently consists of modeling the impact of protein shape on bilayer deformations, temperature sensing of cells through protein-membrane interactions, and the role of protein organization in muscle degenerative diseases.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
