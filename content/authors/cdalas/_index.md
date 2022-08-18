@@ -12,7 +12,7 @@ organizations:
   - name: University of Southern California
     url: https://www.usc.edu/
   - name: Haselwandter Research Group
-    url: https://www.haselwandterlab.com
+    url: https://www.haselwandterlab.com/PhD-students-and-postdocs
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include membrane-protein interactions, protein organization, and bacteria mechanics.
