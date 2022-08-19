@@ -117,7 +117,7 @@
   {{ if in (slice "github.cdalas2.about-slider-two-column") $widget }}
     {{ $css_classes = print $css_classes " carousel slide" }}
     {{ $extra_attributes = printf "data-ride=\"carousel\" data-interval=\"%s\"" (cond ($st.Params.design.loop | default true) (string $st.Params.design.interval | default "3000") "false") }}
-    {{ $use_container = false }}
+    {{ $use_container = true }}
   {{ end }}
 
   {{ $widget_class := printf "wg-%s" (replace (replace $widget "." "-") "_" "-") }}

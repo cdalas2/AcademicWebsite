@@ -12,6 +12,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 1
 
+author: 'cdalas'
+
 design:
   # Slide height is automatic unless you force a specific height (e.g. '400px')
   slide_height: '600px'
@@ -55,6 +57,4 @@ content:
         icon_pack: fas
         text: Join Us
         url: /contact/
-
-author: "cdalas"
 ---
