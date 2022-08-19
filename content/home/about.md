@@ -4,7 +4,7 @@
 widget: about
 
 # Activate this widget? true/false
-active: false
+active: true
 
 # This file represents a page section.
 headless: true
@@ -16,7 +16,7 @@ author: 'cdalas'
 
 design:
   # Slide height is automatic unless you force a specific height (e.g. '400px')
-  slide_height: '850px'
+  slide_height: '650px'
   is_fullscreen: false
   # Automatically transition through slides?
   loop: true
@@ -25,17 +25,17 @@ design:
 
 content:
   slides:
-    - title: 'Protein-induced bilayer deformations'
-      content: 'Recent submission to PRE'
-      align: bottom
+    - title: <br><br><br><br><br><br><br><br>Protein-induced bilayer deformations
+      content: Recent submission to PRE
+      align: center
       background:
         position: top
         color: '#666'
         brightness: 0.7
         media: ProteinBilayerDeformationsPresentationTitlePage.png
         fit: contain
-    - title: 'Emerin protein nanodomains'
-      content: 'Share your knowledge with the group and explore exciting new topics together!'
+    - title: <br><br><br><br><br><br><br><br>Emerin protein nanodomains
+      content: Share your knowledge with the group and explore exciting new topics together!
       align: center
       background:
         position: top
@@ -43,9 +43,9 @@ content:
         brightness: 0.7
         media: EmerinProteinNanoDomainsPresentationTitlePage.png
         fit: contain
-    - title: World-Class Semiconductor Lab
-      content: 'Just opened last month!'
-      align: right
+    - title: <br><br><br><br><br><br><br><br>World-Class Semiconductor Lab
+      content: Just opened last month!
+      align: center
       background:
         position: top
         color: '#666'
