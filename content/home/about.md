@@ -4,7 +4,7 @@
 widget: about
 
 # Activate this widget? true/false
-active: false
+active: true
 
 # This file represents a page section.
 headless: true
@@ -12,9 +12,11 @@ headless: true
 # Order that this section appears on the page.
 weight: 1
 
+author: 'cdalas'
+
 design:
   # Slide height is automatic unless you force a specific height (e.g. '400px')
-  slide_height: '600px'
+  slide_height: '850px'
   is_fullscreen: false
   # Automatically transition through slides?
   loop: true
@@ -23,30 +25,32 @@ design:
 
 content:
   slides:
-    - title: 👋 Welcome to the group
-      content: Take a look at what we're working on...
-      align: left
+    - title: 'Protein-induced bilayer deformations'
+      content: 'Recent submission to PRE'
+      align: bottom
       background:
-        position: left
+        position: top
         color: '#666'
         brightness: 0.7
-        media: 2707951.jpg
+        media: ProteinBilayerDeformationsPresentationTitlePage.png
         fit: contain
-    - title: Lunch & Learn ☕️
+      Previous: true
+      Next: true
+    - title: 'Emerin protein nanodomains'
       content: 'Share your knowledge with the group and explore exciting new topics together!'
       align: center
       background:
-        position: center
-        color: '#555'
+        position: top
+        color: '#666'
         brightness: 0.7
-        media: icon.png
+        media: EmerinProteinNanoDomainsPresentationTitlePage.png
         fit: contain
     - title: World-Class Semiconductor Lab
       content: 'Just opened last month!'
       align: right
       background:
-        position: right
-        color: '#333'
+        position: top
+        color: '#666'
         brightness: 0.7
         media: maxresdefault.jpg
         fit: contain
@@ -55,6 +59,4 @@ content:
         icon_pack: fas
         text: Join Us
         url: /contact/
-
-author: "cdalas"
 ---
