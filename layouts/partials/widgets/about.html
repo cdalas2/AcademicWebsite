@@ -19,8 +19,9 @@
 
 <!-- About widget -->
 <div class="row">
-  <div class="col-12 col-lg-4">
+  <div class="col-1 col-lg-3">
     <div id="profile">
+
       <div class="portrait-title">
         <h4>
           {{- if $person.name_pronunciation -}}
@@ -78,39 +79,45 @@
 
       <div>
         <span style="text-align:justify; font-size: 16px;">
-      {{ $person_page.Content}}
-      </span>
+          {{ $person_page.Content}}
+        </span>
       </div>
     </div>
   </div>
-</div>
-<div class="row">
-  {{ with $person.interests }}
-  <div class="col-md-5">
-    <div class="section-subheading">{{ i18n "interests" | markdownify }}</div>
-    <ul class="ul-interests mb-0">
-      {{ range . }}
-      <li>{{ . | markdownify | emojify }}</li>
-      {{ end }}
-    </ul>
-  </div>
-  {{ end }}
 
-  {{ with $person.education }}
-  <div class="col-md-7">
-    <div class="section-subheading">{{ i18n "education" | markdownify }}</div>
-    <ul class="ul-edu fa-ul mb-0">
-      {{ range .courses }}
-      <li>
-        <i class="fa-li fas fa-graduation-cap"></i>
-        <div class="description">
-          <p class="course">{{ .course }}{{ with .year }}, {{ . }}{{ end }}</p>
-          <p class="institution">{{ .institution }}</p>
-        </div>
-      </li>
-      {{ end }}
-    </ul>
-  </div>
-  {{ end }}
+  <div class="col-2 col-lg-9">
 
+
+    <div class ="row">
+        {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
+          {{ if and $page.Params.widget $page.Title }}<h1>{{ $page.Title | markdownify | emojify }}</h1>{{ end }}
+      {{ with $person.interests }}
+      <div class="col-md-5">
+        <div class="section-subheading">{{ i18n "interests" | markdownify }}</div>
+        <ul class="ul-interests mb-0">
+          {{ range . }}
+          <li>{{ . | markdownify | emojify }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+
+      {{ with $person.education }}
+      <div class="col-md-7">
+        <div class="section-subheading">{{ i18n "education" | markdownify }}</div>
+        <ul class="ul-edu fa-ul mb-0">
+          {{ range .courses }}
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">{{ .course }}{{ with .year }}, {{ . }}{{ end }}</p>
+              <p class="institution">{{ .institution }}</p>
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </div>
 </div>

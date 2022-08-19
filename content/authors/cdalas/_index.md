@@ -18,11 +18,11 @@ superuser: true
 bio: My research interests include membrane-protein interactions, protein organization, and bacteria mechanics.
 
 # Interests to show in About widget
-#interests:
-#  - Membrane Physics
-#  - Bacteria Dynamics
-#  - Data Science
-#  - High Performance Computing
+interests:
+  - Membrane Physics
+  - Bacteria Dynamics
+  - Data Science
+  - High Performance Computing
 
 # Education to show in About widget
 #education:

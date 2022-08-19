@@ -1,6 +1,10 @@
 ---
 # An instance of the About widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
+advanced:
+  css_style: ''
+  css_class: ''
+
 widget: blank
 
 # Activate this widget? true/false
