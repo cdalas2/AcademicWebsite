@@ -1,0 +1,9 @@
+{{/* About-Slider */}}
+{{ $hasCarousel := where site.Pages "Params.widget" "github.cdalas2.about-slider-two-column" }}
+{{ if $hasCarousel }}
+  {{ $js := resources.Get "js/wowchemy-carousel.js" | js.Build (dict "format" "esm" "minify" true) }}
+  {{- if hugo.IsProduction -}}
+    {{- $js = $js | fingerprint "md5" -}}
+  {{- end -}}
+  <script src="{{ $js.RelPermalink }}" type="module"></script>
+{{- end -}}
