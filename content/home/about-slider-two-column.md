@@ -10,7 +10,7 @@ active: true
 headless: true
 
 # Order that this section appears on the page.
-weight: 1
+weight: 2
 
 author: 'cdalas'
 
@@ -34,8 +34,6 @@ content:
         brightness: 0.7
         media: ProteinBilayerDeformationsPresentationTitlePage.png
         fit: contain
-      Previous: true
-      Next: true
     - title: 'Emerin protein nanodomains'
       content: 'Share your knowledge with the group and explore exciting new topics together!'
       align: center

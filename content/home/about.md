@@ -4,7 +4,7 @@
 widget: about
 
 # Activate this widget? true/false
-active: true
+active: false
 
 # This file represents a page section.
 headless: true
@@ -34,8 +34,6 @@ content:
         brightness: 0.7
         media: ProteinBilayerDeformationsPresentationTitlePage.png
         fit: contain
-      Previous: true
-      Next: true
     - title: 'Emerin protein nanodomains'
       content: 'Share your knowledge with the group and explore exciting new topics together!'
       align: center
