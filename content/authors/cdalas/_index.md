@@ -44,7 +44,7 @@ bio: My research interests include membrane-protein interactions, protein organi
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/contact/'
+    link: 'mailto:calas@usc.edu'
   - icon: google-scholar
     icon_pack: ai
     link: 'https://scholar.google.com/citations?hl=en&user=4XnI2mgAAAAJ'
@@ -59,7 +59,7 @@ social:
 #    link: uploads/Resume_CDA.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'calas@usc.edu'
+email: ''
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
