@@ -77,7 +77,7 @@
           </div>
         </div>
       </div>
-      <div class="col px-lg-3 order-lg-2 order-1">
+      <div class="col px-lg-4 order-lg-2 order-1">
         <div class="row pl-lg-1 mx-lg-n4 pb-auto">
               <div class="col-12 pt-lg-0 pt-2 mt-lg-0">
                 <!-- Indicators -->
@@ -158,27 +158,23 @@
                 </a>
               </div>
         </div>
-        <div class="row pt-4 mt-5 mt-lg-4 bg-dark ">
-          <div class="col-12 embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item"
-                    width="470"
-                    height="315"
+        <div class="row pt-0 mt-5 mt-lg-4 bg-dark ">
+          <div class="col-12">
+            <h4 style="text-align:left; font-size: 20px;">{{ $page.Params.videotitle | markdownify | emojify }}</h4>
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe class="embed-responsive-item"
                     src="https://www.youtube.com/embed/bMl28r7R7YY"
-                    title="YouTube video player"
+                    title="My talk at APS March Meeting (Chicago 2022)"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
-            </iframe>
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
       <div class="col-lg-3 mt-lg-0 mt-5 order-lg-3 order-3 ">
         <div id="profile">
-
           <div class="portrait-title">
-            <h4>
-                {{- $person_page.Title -}}
-            </h4>
-
             {{ if site.Params.features.avatar.gravatar }}
             <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=270')" alt="{{$person_page.Title}}">
             {{ else if $avatar }}

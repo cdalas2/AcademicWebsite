@@ -16,7 +16,7 @@ author: 'cdalas'
 
 design:
   # Slide height is automatic unless you force a specific height (e.g. '400px')
-  slide_height: '500px'
+  slide_height: '400px'
   is_fullscreen: false
   # Automatically transition through slides?
   loop: true
@@ -39,23 +39,23 @@ design:
 
 content:
   slides:
-    - title: '<br><br><br><br><br><p style = "font-size: 24px"><b>Protein-induced bilayer deformations</b></p>'
+    - title: '<br><br><br><p style = "font-size: 24px"><b>Protein-induced bilayer deformations</b></p>'
       content: '<p style = "font-size: 16px">How can we calculate bilayer deformations due to the protein shapes obtained from structural biology?</p>'
       align: left
       background:
         position: top
         color: '#333'
         brightness: 1.2
-        media: ProteinBilayerDeformationsPresentationTitlePage.png
+        media: BilayerDeformationColorMaps.png
         fit: contain
-    - title: '<br><br><br><br><br><p style = "font-size: 24px"><b>Stochastic lattice model for emerin nanodomains</b></p>'
+    - title: '<br><br><br><p style = "font-size: 24px"><b>Stochastic lattice model for emerin nanodomains</b></p>'
       content: '<p style = "font-size: 16px">Can we use a stochastic lattice model to study how defective emerin organization and self-assembly can produce muscle degenerative diseases?</p>'
       align: left
       background:
         position: top
         color: '#333'
         brightness: 1.2
-        media: EmerinProteinNanoDomainsPresentationTitlePage.png
+        media: StochasticLatticeModel_ProteinDomains.png
         fit: contain
 #    - title: '<br><br><br><br><br><p style = "font-size: 20px">Stochastic lattice model for emerin nanodomains</p>'
 #      content: '<p style = "font-size: 12px">Can we use a stochastic lattice model to study how defective emerin organization and self-assembly can produce muscle degenerative diseases?</p>'
@@ -71,5 +71,7 @@ content:
 #        icon_pack: fas
 #        text: '<p style = "font-size: 32px">Join Us</p>'
 #        url: /contact/
+
+videotitle: 'My talk at the annual APS March meeting (Chicago 2022)'
 
 ---
