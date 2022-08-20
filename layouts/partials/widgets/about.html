@@ -25,9 +25,11 @@
         <div id="profile">
 
           <div class="portrait-title">
-            <h4>
+            <p style="font-family:Verdana;">
+              <b>
                 {{- $person_page.Title -}}
-            </h4>
+              </b>
+            </p>
 
             {{ if site.Params.features.avatar.gravatar }}
             <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=270')" alt="{{$person_page.Title}}">
@@ -158,7 +160,7 @@
                 </a>
               </div>
         </div>
-        <div class="row pt-0 mt-5 mt-lg-4" style="border-top: 5px solid #EAEAEA">
+        <div class="row pt-0 mt-5 mt-lg-5" style="border-top: 5px solid #EAEAEA">
           <div class="col-12">
             <h4 style="text-align:left; font-size: 20px;">{{ $page.Params.videotitle | markdownify | emojify }}</h4>
             <div class="embed-responsive embed-responsive-4by3">
