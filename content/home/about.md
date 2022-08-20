@@ -16,8 +16,8 @@ author: 'cdalas'
 
 design:
   # Slide height is automatic unless you force a specific height (e.g. '400px')
-  slide_height: '650px'
-  is_fullscreen: true
+  slide_height: '500px'
+  is_fullscreen: false
   # Automatically transition through slides?
   loop: true
   # Duration of transition between slides (in ms)
@@ -39,64 +39,37 @@ design:
 
 content:
   slides:
-    - title: '<br><br><br><br><br><br><br><br><p style = "font-size: 30px">Protein-induced bilayer deformations</p>'
-      content: '<p style = "font-size: 16px">How can we calculate the bilayer deformations for the protein shapes obtained from structural biology?</p>'
+    - title: '<br><br><br><br><br><p style = "font-size: 24px"><b>Protein-induced bilayer deformations</b></p>'
+      content: '<p style = "font-size: 16px">How can we calculate bilayer deformations due to the protein shapes obtained from structural biology?</p>'
       align: left
       background:
         position: top
-        color: '#666'
-        brightness: 0.7
+        color: '#333'
+        brightness: 1.2
         media: ProteinBilayerDeformationsPresentationTitlePage.png
         fit: contain
-    - title: '<br><br><br><br><br><br><br><br><p style = "font-size: 30px">Stochastic lattice model for emerin nanodomains</p>'
+    - title: '<br><br><br><br><br><p style = "font-size: 24px"><b>Stochastic lattice model for emerin nanodomains</b></p>'
       content: '<p style = "font-size: 16px">Can we use a stochastic lattice model to study how defective emerin organization and self-assembly can produce muscle degenerative diseases?</p>'
       align: left
       background:
         position: top
-        color: '#666'
-        brightness: 0.7
+        color: '#333'
+        brightness: 1.2
         media: EmerinProteinNanoDomainsPresentationTitlePage.png
         fit: contain
-    - title: '<br><br><br><br><br><br><br><br><p style = "font-size: 30px">Stochastic lattice model for emerin nanodomains</p>'
-      content: '<p style = "font-size: 16px">Can we use a stochastic lattice model to study how defective emerin organization and self-assembly can produce muscle degenerative diseases?</p>'
-      align: center
-      background:
-        position: top
-        color: '#666'
-        brightness: 0.7
-        media: maxresdefault.jpg
-        fit: contain
-    - title: '<br><br><br><br><br><br><br><br><p style = "font-size: 30px">Stochastic lattice model for emerin nanodomains</p>'
-      content: '<p style = "font-size: 16px">Can we use a stochastic lattice model to study how defective emerin organization and self-assembly can produce muscle degenerative diseases?</p>'
-      align: center
-      background:
-        position: top
-        color: '#666'
-        brightness: 0.7
-        media: maxresdefault.jpg
-        fit: contain
-    - title: '<br><br><br><br><br><br><br><br><p style = "font-size: 30px">Stochastic lattice model for emerin nanodomains</p>'
-      content: '<p style = "font-size: 16px">Can we use a stochastic lattice model to study how defective emerin organization and self-assembly can produce muscle degenerative diseases?</p>'
-      align: center
-      background:
-        position: top
-        color: '#666'
-        brightness: 0.7
-        media: maxresdefault.jpg
-        fit: contain
-    - title: '<br><br><br><br><br><br><br><br><p style = "font-size: 30px">Stochastic lattice model for emerin nanodomains</p>'
-      content: '<p style = "font-size: 16px">Can we use a stochastic lattice model to study how defective emerin organization and self-assembly can produce muscle degenerative diseases?</p>'
-      align: center
-      background:
-        position: top
-        color: '#666'
-        brightness: 0.7
-        media: maxresdefault.jpg
-        fit: contain
-      link:
-        icon: graduation-cap
-        icon_pack: fas
-        text: Join Us
-        url: /contact/
+#    - title: '<br><br><br><br><br><p style = "font-size: 20px">Stochastic lattice model for emerin nanodomains</p>'
+#      content: '<p style = "font-size: 12px">Can we use a stochastic lattice model to study how defective emerin organization and self-assembly can produce muscle degenerative diseases?</p>'
+#      align: center
+#      background:
+#        position: top
+#        color: '#666'
+#        brightness: 0.7
+#        media: maxresdefault.jpg
+#        fit: contain
+#      link:
+#        icon: graduation-cap
+#        icon_pack: fas
+#        text: '<p style = "font-size: 32px">Join Us</p>'
+#        url: /contact/
 
 ---

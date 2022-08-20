@@ -19,141 +19,213 @@
 {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
 
 <!-- About widget -->
-<div class="row">
-  <div class="col-12 col-lg-3" style="margin: -50px 0 -140px">
-    <div id="profile">
+<div class = "container">
+    <div class="row">
+      <div class="col-lg-3 mt-5 mt-lg-0 mb-auto px-lg-auto bg-dark order-lg-1 order-2 border">
+        <div id="profile">
 
-      <div class="portrait-title">
-        <h4>
-            {{- $person_page.Title -}}
-        </h4>
+          <div class="portrait-title">
+            <h4>
+                {{- $person_page.Title -}}
+            </h4>
 
-        {{ if site.Params.features.avatar.gravatar }}
-        <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=270')" alt="{{$person_page.Title}}">
-        {{ else if $avatar }}
-        {{ $avatar_image := $avatar.Fill "360x360 Center" }}
-        <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}"
-             width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}"
-             src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}">
-        {{ end }}
+            {{ if site.Params.features.avatar.gravatar }}
+            <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=270')" alt="{{$person_page.Title}}">
+            {{ else if $avatar }}
+            {{ $avatar_image := $avatar.Fill "360x360 Center" }}
+            <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}"
+                 width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}"
+                 src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}">
+            {{ end }}
 
-        {{ with $person.role }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
+            {{ with $person.role }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
 
-        {{ range $person.organizations }}
-        <h3>
-          {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
-          <span>{{ .name }}</span>
-          {{ if .url }}</a>{{ end }}
-        </h3>
-        {{ end }}
-      </div>
+            {{ range $person.organizations }}
+            <h3>
+              {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+              <span>{{ .name }}</span>
+              {{ if .url }}</a>{{ end }}
+            </h3>
+            {{ end }}
+          </div>
 
-      <ul class="network-icon" aria-hidden="true">
-        {{ range $person.social }}
-        {{ $pack := or .icon_pack "fas" }}
-        {{ $pack_prefix := $pack }}
-        {{ if in (slice "fab" "fas" "far" "fal") $pack }}
-          {{ $pack_prefix = "fa" }}
-        {{ end }}
-        {{ $link := .link }}
-        {{ $scheme := (urls.Parse $link).Scheme }}
-        {{ $target := "" }}
-        {{ if not $scheme }}
-          {{ $link = .link | relLangURL }}
-        {{ else if in (slice "http" "https") $scheme }}
-          {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-        {{ end }}
-        <li>
-          <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
-            <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
-          </a>
-        </li>
-        {{ end }}
-      </ul>
+          <ul class="network-icon" aria-hidden="true">
+            {{ range $person.social }}
+            {{ $pack := or .icon_pack "fas" }}
+            {{ $pack_prefix := $pack }}
+            {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+              {{ $pack_prefix = "fa" }}
+            {{ end }}
+            {{ $link := .link }}
+            {{ $scheme := (urls.Parse $link).Scheme }}
+            {{ $target := "" }}
+            {{ if not $scheme }}
+              {{ $link = .link | relLangURL }}
+            {{ else if in (slice "http" "https") $scheme }}
+              {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+            {{ end }}
+            <li>
+              <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
+                <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
+              </a>
+            </li>
+            {{ end }}
+          </ul>
 
-      <div class= "portrait caption">
-          <p style="text-align:justify; font-size: 16px;">{{ $person.caption | markdownify | emojify }}</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      {{ range $index, $item := $page.Params.content.slides }}
-      <li data-target="#{{$hash_id}}" data-slide-to="{{$index}}" {{if eq $index 0}}class="active"{{end}}></li>
-      {{ end }}
-    </ol>
-
-    <!-- Carousel slides wrapper -->
-    <div class="carousel-inner">
-      {{ range $index, $item := $page.Params.content.slides }}
-
-        {{ $style_bg := "" }}
-        {{ $style_filter := "" }}
-
-        {{with $page.Params.design.slide_height}}
-          {{ $style_bg = printf "%s height: %s;" $style_bg . }}
-        {{end}}
-
-        {{ with $item.background.color }}
-          {{ $style_bg = printf "%s background-color: %s;" $style_bg (. | default "transparent") }}
-        {{ end }}
-
-        {{ if $item.background.media }}
-          {{ $bg_img := resources.Get (printf "media/%s" $item.background.media) }}
-          {{ if $bg_img }}
-            {{ $style_bg = printf "%sbackground-image: url('%s'); background-repeat: no-repeat; background-position: %s; background-size: %s; " $style_bg $bg_img.Permalink ($item.background.position | default "center") ($item.background.fit | default "cover") }}
-          {{ else }}
-            {{ errorf "Couldn't find `%s` in the `assets/media/` folder - please add it." $item.background.media }}
-          {{ end }}
-          {{ with $item.background.brightness }}
-            {{ $style_filter = printf "%s-webkit-backdrop-filter: brightness(%s); backdrop-filter: brightness(%s);" $style_filter (string .) (string .) }}
-          {{ end }}
-        {{ end }}
-
-        <div class="carousel-item{{if eq $index 0}} active{{end}} {{with $page.Params.design.is_fullscreen}}fullscreen{{end}}" style="{{$style_bg | safeCSS}}">
-          <div class="position-absolute d-flex w-100 h-100 justify-content-center align-items-center" style="{{$style_filter | safeCSS}}">
-            {{/* To prevent control overlap, margins are based on $carousel-control-* in bootstrap-variables.scss */}}
-            <div class="wg-hero dark container" style="margin-left: 6rem; margin-right: 6rem; text-align: {{ $item.align | default "left" }};">
-              <h1 class="hero-title">
-                {{ with $item.title }}{{ . | markdownify | emojify }}{{ end }}
-              </h1>
-
-              {{ with $item.content }}
-                <p class="hero-lead" style="{{if eq $item.align "left"}}margin: 0 auto 0 auto;{{else if eq $item.align "right"}}margin-left: auto; margin-right: 0{{end}}">
-                  {{ . | markdownify | emojify }}
-                </p>
-              {{ end }}
-
-              {{ if $item.link.url }}
-                {{ $pack := $item.link.icon_pack | default "fas" }}
-                {{ $pack_prefix := $pack }}
-                {{ if in (slice "fab" "fas" "far" "fal") $pack }}
-                  {{ $pack_prefix = "fa" }}
-                {{ end }}
-                <p>
-                  <a href="{{ $item.link.url }}" class="btn btn-light btn-lg mt-3">
-                    {{- with $item.link.icon -}}<i class="{{ $pack }} {{ $pack_prefix }}-{{ . }}" style="padding-right: 10px;"></i>{{- end -}}
-                    {{- $item.link.text | emojify | markdownify | safeHTML -}}
-                  </a>
-                </p>
-              {{ end }}
-            </div>
+          <div class= "portrait caption">
+              <p style="text-align:justify; font-size: 16px;">{{ $person.caption | markdownify | emojify }}</p>
           </div>
         </div>
-      {{ end }}
-    </div>
+      </div>
+      <div class="col px-lg-3 order-lg-2 order-1">
+        <div class="row pl-lg-1 mx-lg-n4 pb-auto">
+              <div class="col-12 pt-lg-0 pt-2 mt-lg-0">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  {{ range $index, $item := $page.Params.content.slides }}
+                  <li data-target="#{{$hash_id}}" data-slide-to="{{$index}}" {{if eq $index 0}}class="active"{{end}}></li>
+                  {{ end }}
+                </ol>
 
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#{{$hash_id}}" data-slide="prev">
-      <span class="carousel-control-prev-icon" style="margin: 500px 0 0px"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#{{$hash_id}}" data-slide="next">
-      <span class="carousel-control-next-icon" style="margin: 500px 0 0px"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+                <!-- Carousel slides wrapper -->
+                <div class="carousel-inner">
+                  {{ range $index, $item := $page.Params.content.slides }}
+
+                    {{ $style_bg := "" }}
+                    {{ $style_filter := "" }}
+
+                    {{with $page.Params.design.slide_height}}
+                      {{ $style_bg = printf "%s height: %s;" $style_bg . }}
+                    {{end}}
+
+                    {{ with $item.background.color }}
+                      {{ $style_bg = printf "%s background-color: %s;" $style_bg (. | default "transparent") }}
+                    {{ end }}
+
+                    {{ if $item.background.media }}
+                      {{ $bg_img := resources.Get (printf "media/%s" $item.background.media) }}
+                      {{ if $bg_img }}
+                        {{ $style_bg = printf "%sbackground-image: url('%s'); background-repeat: no-repeat; background-position: %s; background-size: %s; " $style_bg $bg_img.Permalink ($item.background.position | default "center") ($item.background.fit | default "cover") }}
+                      {{ else }}
+                        {{ errorf "Couldn't find `%s` in the `assets/media/` folder - please add it." $item.background.media }}
+                      {{ end }}
+                      {{ with $item.background.brightness }}
+                        {{ $style_filter = printf "%s-webkit-backdrop-filter: brightness(%s); backdrop-filter: brightness(%s);" $style_filter (string .) (string .) }}
+                      {{ end }}
+                    {{ end }}
+
+                    <div class="carousel-item{{if eq $index 0}} active{{end}} {{with $page.Params.design.is_fullscreen}}fullscreen{{end}}" style="{{$style_bg | safeCSS}}">
+                      <div class="position-absolute d-flex w-100 h-100 justify-content-center align-items-center" style="{{$style_filter | safeCSS}}">
+                        {{/* To prevent control overlap, margins are based on $carousel-control-* in bootstrap-variables.scss */}}
+                        <div class="wg-hero dark container" style="margin-left: 1rem; margin-right: 1rem; text-align: {{ $item.align | default "left" }};">
+                          <h1 class="hero-title">
+                            {{ with $item.title }}{{ . | markdownify | emojify }}{{ end }}
+                          </h1>
+
+                          {{ with $item.content }}
+                            <p class="hero-lead" style="{{if eq $item.align "left"}}margin: 0 auto 0 auto;{{else if eq $item.align "right"}}margin-left: auto; margin-right: 0{{end}}">
+                              {{ . | markdownify | emojify }}
+                            </p>
+                          {{ end }}
+
+                          {{ if $item.link.url }}
+                            {{ $pack := $item.link.icon_pack | default "fas" }}
+                            {{ $pack_prefix := $pack }}
+                            {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+                              {{ $pack_prefix = "fa" }}
+                            {{ end }}
+                            <p>
+                              <a href="{{ $item.link.url }}" class="btn btn-light btn-lg mt-3">
+                                {{- with $item.link.icon -}}<i class="{{ $pack }} {{ $pack_prefix }}-{{ . }}" style="padding-right: 10px;"></i>{{- end -}}
+                                {{- $item.link.text | emojify | markdownify | safeHTML -}}
+                              </a>
+                            </p>
+                          {{ end }}
+                        </div>
+                      </div>
+                    </div>
+                  {{ end }}
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#{{$hash_id}}" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#{{$hash_id}}" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+        <div class="row pt-4 mt-5 mt-lg-4 bg-dark ">
+          <div class="col-12 embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"
+                    width="470"
+                    height="315"
+                    src="https://www.youtube.com/embed/bMl28r7R7YY"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 mt-lg-0 mt-5 order-lg-3 order-3 ">
+        <div id="profile">
+
+          <div class="portrait-title">
+            <h4>
+                {{- $person_page.Title -}}
+            </h4>
+
+            {{ if site.Params.features.avatar.gravatar }}
+            <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=270')" alt="{{$person_page.Title}}">
+            {{ else if $avatar }}
+            {{ $avatar_image := $avatar.Fill "360x360 Center" }}
+            <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}"
+                 width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}"
+                 src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}">
+            {{ end }}
+
+            {{ with $person.role }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
+
+            {{ range $person.organizations }}
+            <h3>
+              {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+              <span>{{ .name }}</span>
+              {{ if .url }}</a>{{ end }}
+            </h3>
+            {{ end }}
+          </div>
+
+          <ul class="network-icon" aria-hidden="true">
+            {{ range $person.social }}
+            {{ $pack := or .icon_pack "fas" }}
+            {{ $pack_prefix := $pack }}
+            {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+              {{ $pack_prefix = "fa" }}
+            {{ end }}
+            {{ $link := .link }}
+            {{ $scheme := (urls.Parse $link).Scheme }}
+            {{ $target := "" }}
+            {{ if not $scheme }}
+              {{ $link = .link | relLangURL }}
+            {{ else if in (slice "http" "https") $scheme }}
+              {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+            {{ end }}
+            <li>
+              <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
+                <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+
+          <div class= "portrait caption">
+              <p style="text-align:justify; font-size: 16px;">{{ $person.caption | markdownify | emojify }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
