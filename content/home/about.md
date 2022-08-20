@@ -23,24 +23,24 @@ design:
   # Duration of transition between slides (in ms)
   interval: 2000
 
-  background:
-    # Name of image in `assets/media/`.
-    image: "maxresdefault.jpg"
-    # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
-    image_darken: 0.4
-    #  Options are `cover` (default), `contain`, or `actual` size.
-    image_size: cover
-    # Options include `left`, `center` (default), or `right`.
-    image_position: center
-    # Use a fun parallax-like fixed background effect on desktop? true/false
-    image_parallax: true
-    # Text color (true=light, false=dark, or remove for the dynamic theme color).
-    text_color_light: true
+  #background:
+#    # Name of image in `assets/media/`.
+#    image: "maxresdefault.jpg"
+#    # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+#    image_darken: 0.4
+#    #  Options are `cover` (default), `contain`, or `actual` size.
+#    image_size: cover
+#    # Options include `left`, `center` (default), or `right`.
+#    image_position: center
+#    # Use a fun parallax-like fixed background effect on desktop? true/false
+#    image_parallax: true
+#    # Text color (true=light, false=dark, or remove for the dynamic theme color).
+#    text_color_light: true
 
 content:
   slides:
     - title: '<br><br><br><p style = "font-size: 24px"><b>Protein-induced bilayer deformations</b></p>'
-      content: '<p style = "font-size: 16px">How can we calculate bilayer deformations due to the protein shapes obtained from structural biology?</p>'
+      content: '<p style = "font-size: 16px; color: white;">How can we calculate bilayer deformations due to the protein shapes obtained from structural biology?</p>'
       align: left
       background:
         position: top
@@ -49,7 +49,7 @@ content:
         media: BilayerDeformationColorMaps.png
         fit: contain
     - title: '<br><br><br><p style = "font-size: 24px"><b>Stochastic lattice model for emerin nanodomains</b></p>'
-      content: '<p style = "font-size: 16px">Can we use a stochastic lattice model to study how defective emerin organization and self-assembly can produce muscle degenerative diseases?</p>'
+      content: '<p style = "font-size: 16px; color: white;">Can we use a stochastic lattice model to study how defective emerin organization and self-assembly can produce muscle degenerative diseases?</p>'
       align: left
       background:
         position: top
@@ -72,6 +72,6 @@ content:
 #        text: '<p style = "font-size: 32px">Join Us</p>'
 #        url: /contact/
 
-videotitle: 'My talk at the annual APS March meeting (Chicago 2022)'
+videotitle: 'My talk at APS Annual March Meeting (Chicago 2022)'
 
 ---
