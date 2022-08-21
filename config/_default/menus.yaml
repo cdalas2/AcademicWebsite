@@ -5,8 +5,20 @@
 
 main:
   - name: Research
-    url: '/research/'
+    identifier: research
     weight: 10
+  - name: 'Protein Bilayer Deformations'
+    parent: research
+    url: /research/protein-bilayer-deformations/
+    weight: 10
+  - name: 'Temperature Sensing'
+    parent: research
+    url: /research/temperature-sensing/
+    weight: 20
+  - name: 'Emerin Nanodomains'
+    parent: research
+    url: /research/emerin-nanodomains/
+    weight: 30
   - name: Projects
     url: '/projects/'
     weight: 20
