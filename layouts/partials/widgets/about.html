@@ -1,6 +1,7 @@
 {{ $ := .root }}
 {{ $page := .page }}
 {{ $hash_id := .hash_id }}
+{{ $st := .page }}
 
 {{ $author := "" }}
 {{ if .author }}
@@ -19,18 +20,32 @@
 {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
 
 <!-- About widget -->
-<div class = "container">
+
+<style>
+      div.scroll {
+        background-color: transparent;
+        height: 43em;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 1px;
+      }
+</style>
+<div class = "container-fluid">
     <div class="row">
       <div class="col-lg-3 mt-5 mt-lg-0 mb-auto px-lg-0 order-lg-1 order-2" style="border: 5px solid grey">
-        <div id="profile">
+        <div class="scroll">
+          <div id="profile">
 
-          <div class="portrait-title">
+          <div class="portrait-title" style="position: relative; bottom: 30px">
             <p style="font-family:Verdana;">
               <b>
-                {{- $person_page.Title -}}
+                {{ if $person_page.Title }}
+                  {{$person_page.Title | markdownify | emojify }}
+                {{ end }}
               </b>
             </p>
-
+          </div>
+          <div class="portrait" style="position: relative; bottom: 30px">
             {{ if site.Params.features.avatar.gravatar }}
             <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=270')" alt="{{$person_page.Title}}">
             {{ else if $avatar }}
@@ -51,7 +66,7 @@
             {{ end }}
           </div>
 
-          <ul class="network-icon" aria-hidden="true">
+          <ul style="position: relative; bottom: 25px" class="network-icon" aria-hidden="true">
             {{ range $person.social }}
             {{ $pack := or .icon_pack "fas" }}
             {{ $pack_prefix := $pack }}
@@ -74,8 +89,9 @@
             {{ end }}
           </ul>
 
-          <div class= "portrait caption">
+          <div class= "portrait caption" style="position: relative; bottom: -5px">
               <p style="text-align:justify; font-size: 16px;">{{ $person.caption | markdownify | emojify }}</p>
+          </div>
           </div>
         </div>
       </div>
@@ -174,54 +190,127 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 mt-lg-0 mt-5 order-lg-3 order-3 ">
-        <div id="profile">
-          <div class="portrait-title">
-            {{ if site.Params.features.avatar.gravatar }}
-            <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=270')" alt="{{$person_page.Title}}">
-            {{ else if $avatar }}
-            {{ $avatar_image := $avatar.Fill "360x360 Center" }}
-            <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}"
-                 width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}"
-                 src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}">
-            {{ end }}
+      <div class="col-lg-3 mt-lg-0 mt-5 order-lg-3 order-3">
+        <div class="scroll">
+          <div style="position: relative; bottom: 20px">
+              {{/* Pages Widget */}}
 
-            {{ with $person.role }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
+              <div class="recent-title">
+                <p style="font-family:Verdana">
+                  <center>
+                    <b>
+                    {{ if $st.Params.recent_title }}
+                      {{$st.Params.recent_title | markdownify | emojify }}
+                    {{ end }}
+                    </b>
+                  </center>
+                </p>
+              </div>
 
-            {{ range $person.organizations }}
-            <h3>
-              {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
-              <span>{{ .name }}</span>
-              {{ if .url }}</a>{{ end }}
-            </h3>
-            {{ end }}
-          </div>
+              {{ $items_offset := $st.Params.content.offset | default 0 }}
+              {{ $items_count := $st.Params.content.count }}
+              {{ if eq $items_count 0 }}
+                {{ $items_count = 65535 }}
+              {{ else }}
+                {{ $items_count = $items_count | default 5 }}
+              {{ end }}
 
-          <ul class="network-icon" aria-hidden="true">
-            {{ range $person.social }}
-            {{ $pack := or .icon_pack "fas" }}
-            {{ $pack_prefix := $pack }}
-            {{ if in (slice "fab" "fas" "far" "fal") $pack }}
-              {{ $pack_prefix = "fa" }}
-            {{ end }}
-            {{ $link := .link }}
-            {{ $scheme := (urls.Parse $link).Scheme }}
-            {{ $target := "" }}
-            {{ if not $scheme }}
-              {{ $link = .link | relLangURL }}
-            {{ else if in (slice "http" "https") $scheme }}
-              {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-            {{ end }}
-            <li>
-              <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
-                <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
-              </a>
-            </li>
-            {{ end }}
-          </ul>
+              {{/* Query */}}
+              {{ $query := site.RegularPages }}
+              {{ $archive_page := "" }}
 
-          <div class= "portrait caption">
-              <p style="text-align:justify; font-size: 16px;">{{ $person.caption | markdownify | emojify }}</p>
+              {{/* Filters */}}
+              {{ if $st.Params.content.page_type }}
+                {{ $query = where $query "Type" $st.Params.content.page_type }}
+                {{ $archive_page = site.GetPage "Section" $st.Params.content.page_type }}
+              {{ end }}
+              {{ if $st.Params.content.filters.folders }}
+                {{ $folders := $st.Params.content.filters.folders }}
+                {{ $query = where $query "Section" "in" $folders }}
+                {{/* Init archive page to main folder */}}
+                {{ $main_folder := index $folders 0 }}
+                {{ $archive_page = site.GetPage "Section" $main_folder }}
+              {{ end }}
+              {{ if $st.Params.content.filters.tag }}
+                {{ $archive_page = site.GetPage (printf "tags/%s" (urlize $st.Params.content.filters.tag)) }}
+                {{ $query = $query | intersect $archive_page.Pages }}
+              {{ end }}
+              {{ if $st.Params.content.filters.category }}
+                {{ $archive_page = site.GetPage (printf "categories/%s" (urlize $st.Params.content.filters.category)) }}
+                {{ $query = $query | intersect $archive_page.Pages }}
+              {{ end }}
+              {{ if $st.Params.content.filters.publication_type }}
+                {{ $archive_page = site.GetPage (printf "publication_types/%s" $st.Params.content.filters.publication_type) }}
+                {{ $query = $query | intersect $archive_page.Pages }}
+              {{ end }}
+              {{ if $st.Params.content.filters.author }}
+                {{ $archive_page = site.GetPage (printf "authors/%s" (urlize $st.Params.content.filters.author)) }}
+                {{ $query = $query | intersect $archive_page.Pages }}
+              {{ end }}
+              {{ if $st.Params.content.filters.exclude_featured }}
+                {{ $query = where $query "Params.featured" "!=" true }}
+              {{ end }}
+              {{ if $st.Params.content.filters.exclude_past }}
+                {{ $query = where $query "Date" ">=" now }}
+              {{ end }}
+              {{ if $st.Params.content.filters.exclude_future }}
+                {{ $query = where $query "Date" "<" now }}
+              {{ end }}
+
+              {{ $count := len $query }}
+
+              {{/* Sort */}}
+              {{ $sort_by := $st.Params.content.sort_by | default "Date" }}
+              {{ $sort_ascending := $st.Params.content.sort_ascending | default (eq $st.Params.content.order "asc") | default false }}
+              {{ $sort_order := cond $sort_ascending "asc" "desc" }}
+              {{ $query = sort $query $sort_by $sort_order }}
+
+              {{/* Offset and Limit */}}
+              {{ if gt $items_offset 0 }}
+                {{ $query = first $items_count (after $items_offset $query) }}
+              {{ else }}
+                {{ $query = first $items_count $query }}
+              {{ end }}
+
+                {{ with $st.Content }}{{ . }}{{ end }}
+
+                {{ range $index, $item := $query }}
+                  {{ partial "functions/render_view" (dict "page" $st "item" . "view" ($st.Params.design.view | default "compact") "index" $index) }}
+                {{end}}
+
+                {{/* Archive link */}}
+                {{ $show_archive_link := $st.Params.content.archive.enable | default (gt $count $items_count) }}
+                {{ if $show_archive_link | and $archive_page }}
+
+                  {{ $archive_link := "" }}
+                  {{ if $st.Params.content.archive.link }}
+                    {{ $archive_link = $st.Params.content.archive.link | relLangURL }}
+                  {{ else }}
+                    {{ $archive_link = $archive_page.RelPermalink }}
+                  {{ end }}
+
+                  {{/* Localisation */}}
+                  {{ $items_type := $archive_page.Type }}
+                  {{ $i18n := "" }}
+                  {{ if eq $items_type "post" }}
+                    {{ $i18n = "more_posts" }}
+                  {{ else if eq $items_type "event" }}
+                    {{ $i18n = "more_talks" }}
+                  {{ else if eq $items_type "publication" }}
+                    {{ $i18n = "more_publications" }}
+                  {{ else }}
+                    {{ $i18n = "more_pages" }}
+                  {{ end }}
+
+                  {{ $archive_text := $st.Params.content.archive.text | default (i18n $i18n) | default "See all" }}
+
+                  <div class="see-all">
+                    <a href="{{ $archive_link }}">
+                      {{ $archive_text | emojify }}
+                      <i class="fas fa-angle-right"></i>
+                    </a>
+                  </div>
+                {{ end }}
           </div>
         </div>
       </div>

@@ -22,6 +22,8 @@ design:
   loop: true
   # Duration of transition between slides (in ms)
   interval: 2000
+  # view of recent activity column
+  view: masonry
 
   #background:
 #    # Name of image in `assets/media/`.
@@ -36,7 +38,7 @@ design:
 #    image_parallax: true
 #    # Text color (true=light, false=dark, or remove for the dynamic theme color).
 #    text_color_light: true
-
+recent_title: 'Recent activity'
 content:
   slides:
     - title: '<br><br><br><p style = "font-size: 24px"><b>Protein-induced bilayer deformations</b></p>'
@@ -70,7 +72,13 @@ content:
 #        icon: graduation-cap
 #        icon_pack: fas
 #        text: '<p style = "font-size: 32px">Join Us</p>'
-#        url: /contact/
+#        url: /contact/]
+  filters:
+    folders:
+      - projects
+      - contact
+      - publications
+  count: 10
 
 videotitle: 'My talk at APS Annual March Meeting (Chicago 2022)'
 
