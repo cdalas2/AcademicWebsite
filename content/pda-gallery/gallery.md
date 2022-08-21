@@ -14,7 +14,7 @@ content:
   filters:
     # The folders to display content from
     folders:
-      - bilayerpda
+      - pda
     tag: ''
     category: ''
     publication_type: ''
@@ -36,6 +36,6 @@ design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
   columns: '1'
 ---
-<audio controls controlsList="nodownload">
+<audio autoplay controls controlsList="nodownload">
   <source src="Interstellar-Main-Theme-Extra-Extended.mp3" type="audio/mpeg">
 </audio>

@@ -84,9 +84,10 @@ content:
       - papers
       - movies
       - pda-gallery
+      - pda
       - contact
       - post
-  count: 10
+  count: 0
 
 videotitle: '<p><b>My talk at APS Annual March Meeting (Chicago 2022)</b></p>'
 
