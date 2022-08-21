@@ -39,8 +39,8 @@
           <div class="portrait-title" style="position: relative; bottom: 30px">
             <p style="font-family:Verdana;">
               <b>
-                {{ if $person_page.Title }}
-                  {{$person_page.Title | markdownify | emojify }}
+                {{ if $page.Params.About_title }}
+                  {{$page.Params.About_title | markdownify | emojify }}
                 {{ end }}
               </b>
             </p>

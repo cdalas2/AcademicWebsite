@@ -12,6 +12,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 1
 
+about_title: 'About Me'
+
 author: 'cdalas'
 
 design:
@@ -21,7 +23,7 @@ design:
   # Automatically transition through slides?
   loop: true
   # Duration of transition between slides (in ms)
-  interval: 2000
+  interval: 5000
   # view of recent activity column
   view: masonry
 
@@ -38,7 +40,7 @@ design:
 #    image_parallax: true
 #    # Text color (true=light, false=dark, or remove for the dynamic theme color).
 #    text_color_light: true
-recent_title: 'Recent activity'
+recent_title: 'Recent Activity'
 content:
   slides:
     - title: '<br><br><br><p style = "font-size: 24px"><b>Protein-induced bilayer deformations</b></p>'
@@ -75,9 +77,15 @@ content:
 #        url: /contact/]
   filters:
     folders:
+      - research
       - projects
+      - talks
+      - posters
+      - papers
+      - movies
+      - pda
       - contact
-      - publications
+      - post
   count: 10
 
 videotitle: '<p><b>My talk at APS Annual March Meeting (Chicago 2022)</b></p>'
