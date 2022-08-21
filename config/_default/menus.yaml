@@ -34,8 +34,8 @@ main:
   - name: Movies
     url: '/movies/'
     weight: 60
-  - name: PDA
-    url: '/pda/'
+  - name: 'PDA Gallery'
+    url: '/pda-gallery/'
     weight: 70
   - name: Contact
     url: '/contact/'

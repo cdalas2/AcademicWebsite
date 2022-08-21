@@ -83,7 +83,7 @@ content:
       - posters
       - papers
       - movies
-      - pda
+      - pda-gallery
       - contact
       - post
   count: 10
