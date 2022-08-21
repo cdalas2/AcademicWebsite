@@ -80,6 +80,6 @@ content:
       - publications
   count: 10
 
-videotitle: 'My talk at APS Annual March Meeting (Chicago 2022)'
+videotitle: '<p><b>My talk at APS Annual March Meeting (Chicago 2022)</b></p>'
 
 ---
