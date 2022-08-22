@@ -24,4 +24,4 @@ url_video: ''
 #   Otherwise, set `slides = ""`.
 ---
 <img src="featured_gif.gif" alt="Travelers Red Umbrella Shields Southern California At Night"/>
-Disclaimer: This animations is solely for my own artistic purposes and not reflective of Travelers coverage or views.
+Disclaimer: This animation is solely for my own artistic purposes and not meant to be reflective of Travelers actions, coverage, or views.
