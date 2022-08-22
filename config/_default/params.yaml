@@ -18,13 +18,13 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'Doctoral Candidate in Physics'
-    twitter: 'wowchemy'
+    description: 'Computational biophysicist preparing for a career in data science'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
   verification:
-    google: ''
+    google: 'google-site-verification=Anmkioyk6bKjTaVbNjmxqcjxjx3Uzl1bR89mveIr8Uo'
     baidu: ''
 
 # Site header
