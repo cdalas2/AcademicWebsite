@@ -77,7 +77,7 @@ content:
 #        url: /contact/]
   filters:
     folders:
-      - research
+      - research/protein-bilayer-deformations
       - projects
       - talks
       - posters
@@ -87,7 +87,7 @@ content:
       - pda
       - contact
       - post
-  count: 10
+  count: 0
 
 videotitle: '<p><b>My talk at APS Annual March Meeting (Chicago 2022)</b></p>'
 

@@ -1,5 +1,5 @@
 ---
-title: Travelers Red Umbrella At Night
+title: Travelers Red Umbrella
 summary: To mark the success of my data science summer 2022 internship at Travelers.
 tags:
 date: '2022-08-12T00:00:00Z'
@@ -23,5 +23,5 @@ url_video: ''
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
 ---
-<img src="featured_gif.gif" alt="Travelers Red Umbrella At Night"/>
+<img src="featured_gif.gif" alt="Travelers Red Umbrella"/>
 Disclaimer: This animation is solely for my own artistic purposes and not meant to be reflective of Travelers actions, coverage, or views.
