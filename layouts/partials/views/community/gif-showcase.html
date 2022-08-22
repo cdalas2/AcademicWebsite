@@ -49,7 +49,7 @@
 
     </div>
     <div class="col-12 col-md-6 order-first {{$order}}">
-      {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
+      {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured_gif*" }}
       {{ with $resource }}
       {{ $image := .Resize "540x" }}
       {{if $do_link}}<a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{end}}

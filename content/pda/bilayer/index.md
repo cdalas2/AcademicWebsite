@@ -1,22 +1,17 @@
 ---
-title: Example Project
-summary: An example of using the in-built project page.
+title: Rainbow Sherbet Lipid Bilayer
+summary: For my first PhD paper submission for peer-review
 tags:
-  - Deep Learning
-date: '2022-08-21T00:00:00Z'
+date: '2022-08-08T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
 
 image:
-  caption: Photo by rawpixel on Unsplash
+  caption:
   focal_point: Smart
+  preview_only: true
 
-links:
-  - icon: twitter
-    icon_pack: fab
-    name: Follow
-    url: https://twitter.com/georgecushen
 url_code: ''
 url_pdf: ''
 url_slides: ''
@@ -27,5 +22,6 @@ url_video: ''
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
+slides:
 ---
+<img src="featured_gif.gif" alt="Rainbow Sherbet Lipid Bilayer"/>

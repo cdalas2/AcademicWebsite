@@ -3,8 +3,8 @@ widget: pages
 headless: false  # This file represents a page section.
 
 # ... Put Your Section Options Here (title etc.) ...
-title: Recent Blog Posts
-subtitle: ''
+title: Particle Diffusion Art Gallery
+subtitle: 'where diffusing particles serve as a medium'
 
 # Position of this section on the page
 weight: 1
@@ -39,3 +39,4 @@ design:
 <audio autoplay controls controlsList="nodownload">
   <source src="Interstellar-Main-Theme-Extra-Extended.mp3" type="audio/mpeg">
 </audio>
+The pieces in this collection were created to commemorate previous projects and achievements that are dear to me. Using the stochastic lattice model implemented by kinetic Monte Carlo, one can synthesize the following collection of pieces.[Music credit: Interstellar Main Theme Extra Extended - Hans Zimmer]<br><br>

@@ -1,22 +1,17 @@
 ---
-title: Example Project
-summary: An example of using the in-built project page.
+title: Travelers Red Umbrella Shields Southern California At Night
+summary: To mark the success of my data science summer 2022 internship at Travelers.
 tags:
-  - Deep Learning
-date: '2016-04-27T00:00:00Z'
+date: '2022-08-12T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
 
 image:
-  caption: Photo by rawpixel on Unsplash
+  caption:
   focal_point: Smart
+  preview_only: true
 
-links:
-  - icon: twitter
-    icon_pack: fab
-    name: Follow
-    url: https://twitter.com/georgecushen
 url_code: ''
 url_pdf: ''
 url_slides: ''
@@ -27,5 +22,5 @@ url_video: ''
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
 ---
+<img src="featured_gif.gif" alt="Travelers Red Umbrella Shields Southern California At Night"/>
