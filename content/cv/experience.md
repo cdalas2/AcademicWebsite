@@ -2,7 +2,7 @@
 # An instance of the Experience Two Column widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
 widget: github.Chrede88.experience-two-column
-
+active: false
 # This file represents a page section.
 headless: true
 
