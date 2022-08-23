@@ -77,7 +77,7 @@ content:
 #        url: /contact/]
   filters:
     folders:
-      - research/protein-bilayer-deformations
+      - research
       - projects
       - talks
       - posters
