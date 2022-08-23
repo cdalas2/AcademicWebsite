@@ -18,7 +18,7 @@ design:
   columns: '1'
 ---
 
-# Boundary value method for protein bilayer thickness deformations
+# Protein bilayer deformations
 
 <img src="BilayerAndProteinSurface.png">
 
