@@ -1,8 +1,8 @@
 ---
 type: widget_page
-title: 'dfdsfsd'
-summary:
-date: "2022-08-21T00:00:00Z"
+title: 'Protein-bilayer deformations'
+summary: 'Learn how protein shape can affect protein-bilayer deformations'
+date: "2022-08-04T00:00:00Z"
 
 reading_time: true  # Show estimated reading time?
 share: true # Show social sharing links?

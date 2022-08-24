@@ -1,7 +1,7 @@
 ---
 widget: blank
 title:
-summary: 'dsfdsf'
+summary: 
 date: "2022-08-21T00:00:00Z"
 headless: false
 
@@ -17,11 +17,15 @@ header:
 
 design:
   columns: '1'
+
+weight: 10
 ---
 
 <center><p style="font-size: 24px">Swimming of microorganisms in quasi 2D membranes</p></center><br>
 
-<p style="font-size: 16px" align="justify">Bacteria in quasi 2D fluids...<br></p>
 <img src="swimmers_in_quasi2D.png">
 
 > <p style="font-size: 16px" align="justify">Swimming speed of infinitely long flagella can be faster than their swimming speed in 2D and 3D </p>
+
+<br>
+<p style="font-size: 16px" align="justify">Biological swimmers frequently navigate in geometrically restricted media. We studied the prescribed-stroke problem of swimmers confined to a planar viscous membrane embedded in a bulk fluid of different viscosity. In their motion, microscopic swimmers disturb the fluid in both the membrane and the bulk. The flows that emerge have a combination of two dimensional (2-D) and three-dimensional (3-D) hydrodynamic features, and such flows are referred to as quasi-two dimensional. The cross-over from 2-D to 3-D hydrodynamics in a quasi-2-D fluid is controlled by the Saffman length, a length scale given by the ratio of the 2-D membrane viscosity to the 3-D viscosity of the embedding bulk fluid. We have developed a computational and theoretical approach based on the boundary element method and the Lorentz reciprocal theorem to study the swimming of microorganisms for a range of values of the Saffman length. We found that a flagellum propagating transverse sinusoidal waves in a quasi 2-D membrane can develop a swimming speed exceeding that in pure 2-D or 3-D fluids, while the propulsion of a 2-D squirmer is slowed down by the presence of the bulk fluid.  To find out more, please see our work published in the <a href='https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/swimming-of-microorganisms-in-quasitwodimensional-membranes/FAE95F950CDF3D540F15EEF2F603076C/share/511c2fc65b179ffc57591993ec655f2e24b63b24'> Journal of Fluid Mechanics</a>.</p>

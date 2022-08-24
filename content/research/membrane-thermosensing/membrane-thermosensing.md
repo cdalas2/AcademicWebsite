@@ -14,14 +14,14 @@ comments: false  # Show comments?
 design:
   columns: '1'
 
+weight: 10
+
 ---
 
 <center><p style="font-size: 24px">Membrane thermosensing</p></center><br>
 
-<p style="font-size: 16px" align="justify">Membrane thermosensing...<br></p>
-
 <img src="thermosensing_cover.png">
 
-> <p style="font-size: 16px" align="justify">Can we use a stochastic lattice model to study how defective emerin organization and self-assembly can produce muscle degenerative diseases?</p>
+> <p style="font-size: 16px" align="justify">Can a temperature-dependent protein-bilayer mechanical model account for the temperature sensing of cells?</p>
 
-<br><br>
+<p style="font-size: 16px" align="justify">Membrane thermosensing...</p>

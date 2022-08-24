@@ -24,7 +24,7 @@ main:
     weight: 30
   - name: Microorganisms in quasi-2D membranes
     parent: research
-    url: /research/Microorganisms-in-quasi-2d-membranes/
+    url: /research/microorganisms-in-quasi-2d-membranes/
     weight: 40
   - name: Projects
     url: '/projects/'

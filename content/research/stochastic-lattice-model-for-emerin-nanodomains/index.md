@@ -1,8 +1,8 @@
 ---
 type: widget_page
-title: 'dfsdfds'
-summary:
-date: "2022-08-21T00:00:00Z"
+title: 'Stochastic lattice model for emerin nanodomains'
+summary: 'We are developing a stochastic model to explore the organization of emerin protein on the nuclear membrane'
+date: "2022-08-05T00:00:00Z"
 
 reading_time: true  # Show estimated reading time?
 share: true # Show social sharing links?
