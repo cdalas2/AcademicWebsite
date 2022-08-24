@@ -5,8 +5,7 @@ title: Dependence of protein-induced lipid bilayer deformations on protein shape
 subtitle: ''
 summary: ''
 authors:
-- Carlos D. Alas
-- Christoph A. Haselwandter
+- C. D. Alas and C. A. Haselwandter
 tags:
 - Biological Physics (physics.bio-ph)
 - Soft Condensed Matter (cond-mat.soft)
@@ -41,7 +40,7 @@ publishDate: '2022-08-24T07:36:03.270566Z'
 publication_types:
 - '3'
 abstract: ''
-publication: '*arXiv*'
+publication: '*arXiv. (in review)*'
 doi: 10.48550/ARXIV.2208.05011
 links:
 - name: URL

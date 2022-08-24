@@ -18,7 +18,7 @@ author: 'cdalas'
 
 design:
   # Slide height is automatic unless you force a specific height (e.g. '400px')
-  slide_height: '450px'
+  slide_height: '400px'
   is_fullscreen: false
   # Automatically transition through slides?
   loop: true
@@ -70,7 +70,7 @@ content:
         brightness: 1.2
         media: BilayerDeformationColorMaps.png
         fit: contain
-    - title: '<br><br><p style = "font-size: 24px"><b>[Swimming of microorganisms in quasi-2D membranes](/research/emerin-nanodomains)</b></p>'
+    - title: '<br><br><br><p style = "font-size: 24px"><b>[Swimming of microorganisms in quasi-2D membranes](/research/emerin-nanodomains)</b></p>'
       content: '<p style = "font-size: 16px; color: white;">How do microorganisms propagate in quasi-2D membranes?</p>'
       align: left
       background:

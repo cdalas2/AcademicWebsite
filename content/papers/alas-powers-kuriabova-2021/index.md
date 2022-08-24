@@ -5,9 +5,7 @@ title: Swimming of microorganisms in quasi-two-dimensional membranes
 subtitle: ''
 summary: ''
 authors:
-- Carlos Alas
-- Thomas R. Powers
-- Tatiana Kuriabova
+- C. Alas, T. R. Powers, and T. Kuriabova
 tags: []
 categories: []
 date: '2021-01-01'

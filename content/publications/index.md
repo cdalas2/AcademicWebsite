@@ -1,4 +1,5 @@
 ---
+type: widget_page
 title:
 cms_exclude: true
 
@@ -15,4 +16,3 @@ header:
   image: ''
 
 ---
-<center><p style="font-size:24px"><b>Published and submitted papers</b></p></center>

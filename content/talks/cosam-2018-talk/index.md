@@ -5,8 +5,7 @@ title: 'Swimming of biological filamentous microorganisms in quasi-2D membranes'
 subtitle: ''
 summary: ''
 authors:
-  - Carlos D. Alas
-  - Tatiana Kuriabova
+  - C. Alas, T. Kuriabova
 tags: []
 categories: []
 date: '2018-01-01'
@@ -30,9 +29,7 @@ image:
 projects: []
 publishDate: '2018-05-17T00:00:00.795971Z'
 publication_types:
-- '1'
+- '0'
 abstract: ''
 publication: '*CSM Student Research Conference*. California Polytechnic State University, San Luis Obispo, CA, USA'
-
-year: '2022'
 ---

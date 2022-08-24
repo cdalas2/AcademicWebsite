@@ -6,16 +6,7 @@ title: Experimental Studies of Two-dimensional Laminar Jet Flows in Freely Suspe
 subtitle: ''
 summary: ''
 authors:
-- Kyle R. Ferguson
-- Evan Dutch
-- Zhiyuan Qi
-- Adam Green
-- Carlos Alas
-- Corrina Briggs
-- Cheol Soo Park
-- Matthew A. Glaser
-- Joseph E. Maclennan
-- Noel A. Clark
+- K. R. Ferguson, E. Dutch, Z. Qi, A. Green, C. Alas, C. Briggs, C. S. Park, M. A. Glaser, J. E. Maclennan, and N. A. Clark
 tags:
 - Soft Condensed Matter (cond-mat.soft)
 - 'FOS: Physical sciences'
@@ -44,7 +35,7 @@ publishDate: '2022-08-24T07:45:40.351286Z'
 publication_types:
 - '3'
 abstract: ''
-publication: '*arXiv*'
+publication: '*arXiv (preprint)*'
 doi: 10.48550/ARXIV.1808.01747
 links:
 - name: URL

@@ -1,15 +1,15 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: 'Swimming of biological filamentous microorganisms in quasi-2D membranes'
+title: Thermosensing by transmembrane proteins via the mechanics of bilayer-protein interactions
 subtitle: ''
 summary: ''
 authors:
-  - C. Alas and T. Kuriabova
-tags: []
+- C. D. Alas and C. A. Haselwandter
+tags:
 categories: []
-date: '2018-01-01'
-lastmod: 2022-08-23T23:06:32-07:00
+date: '2022-12-01'
+lastmod: 2022-08-24T00:36:03-07:00
 featured: false
 draft: false
 
@@ -27,15 +27,9 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2018-05-17T00:00:00.795971Z'
+publishDate: '2022-08-24T07:36:03.270566Z'
 publication_types:
 - '0'
 abstract: ''
-publication: '*CSM Student Research Conference*. California Polytechnic State University, San Luis Obispo, CA, USA'
-
-links:
-- name: Poster
-  url: 'cosam-2018-poster.pdf'
-
-
+publication: '*(in preparation)*'
 ---
