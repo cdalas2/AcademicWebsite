@@ -8,8 +8,24 @@ main:
     url: #About\
     weight: 1
   - name: Research
-    url: /research/
+    identifier: research
     weight: 10
+  - name: Stochastic lattice model for emerin nanodomains
+    parent: research
+    url: /research/stochastic-lattice-model-for-emerin-nanodomains/
+    weight: 10
+  - name: Membrane thermosensing
+    parent: research
+    url: /research/membrane-thermosensing/
+    weight: 20
+  - name: Protein-induced bilayer deformations
+    parent: research
+    url: /research/protein-induced-bilayer-deformations/
+    weight: 30
+  - name: Microorganisms in quasi-2D membranes
+    parent: research
+    url: /research/Microorganisms-in-quasi-2d-membranes/
+    weight: 40
   - name: Projects
     url: '/projects/'
     weight: 20

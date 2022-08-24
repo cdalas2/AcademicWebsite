@@ -1,5 +1,5 @@
 ---
-title: Publications
+title:
 cms_exclude: true
 
 # View.
@@ -11,6 +11,8 @@ view: 4
 
 # Optional header image (relative to `static/media/` folder).
 header:
-  caption: 'sdsdasdsads'
+  caption: ''
   image: ''
+
 ---
+<center><p style="font-size:24px"><b>Published and submitted papers</b></p></center>
