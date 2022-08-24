@@ -15,4 +15,4 @@ header:
   image: ''
 
 ---
-<center><p style="font-size:24px"><b>Talks</b></p></center>
+<center><p style="font-size:24px"><b>Contributed Talks</b></p></center>
