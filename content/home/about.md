@@ -43,7 +43,7 @@ design:
 recent_title: 'Recent Activity'
 content:
   slides:
-    - title: '<br><br><br><p style = "font-size: 24px"><b>[Stochastic lattice model for emerin nanodomains](/research/#emerin-nanodomains)</b></p>'
+    - title: '<br><br><br><p style = "font-size: 24px"><b>[Stochastic lattice model for emerin nanodomains](/research/stochastic-lattice-model-for-emerin-nanodomains)</b></p>'
       content: '<p style = "font-size: 16px; color: white;">Can we use a stochastic lattice model to study how defective emerin organization and self-assembly can lead to muscle degenerative diseases?</p>'
       align: left
       background:
@@ -52,7 +52,7 @@ content:
         brightness: 1.2
         media: StochasticLatticeModel_ProteinDomains.png
         fit: contain
-    - title: '<br><br><br><p style = "font-size: 24px"><b>[Membrane thermosensing](/research/#membrane-thermosensing)</b></p>'
+    - title: '<br><br><br><p style = "font-size: 24px"><b>[Membrane thermosensing](/research/membrane-thermosensing)</b></p>'
       content: '<p style = "font-size: 16px; color: white;">Can a temperature-dependent protein-bilayer mechanical model account for the temperature sensing of cells?</p>'
       align: left
       background:
@@ -61,7 +61,7 @@ content:
         brightness: 0.95
         media: thermosensing_cover.png
         fit: contain
-    - title: '<br><br><br><p style = "font-size: 24px"><b>[Protein-induced bilayer deformations](/research/#protein-bilayer-deformations)</b></p>'
+    - title: '<br><br><br><p style = "font-size: 24px"><b>[Protein-induced bilayer deformations](/research/protein-induced-bilayer-deformations)</b></p>'
       content: '<p style = "font-size: 16px; color: white;">How can we calculate bilayer deformations due to the protein shapes obtained from structural biology?</p>'
       align: left
       background:
@@ -70,7 +70,7 @@ content:
         brightness: 1.2
         media: BilayerDeformationColorMaps.png
         fit: contain
-    - title: '<br><br><br><p style = "font-size: 24px"><b>[Swimming of microorganisms in quasi-2D membranes](/research/emerin-nanodomains)</b></p>'
+    - title: '<br><br><br><p style = "font-size: 24px"><b>[Swimming of microorganisms in quasi-2D membranes](/research/microorganisms-in-quasi-2d-membranes)</b></p>'
       content: '<p style = "font-size: 16px; color: white;">How do microorganisms propagate in quasi-2D membranes?</p>'
       align: left
       background:

@@ -17,11 +17,12 @@ design:
 weight: 10
 
 ---
+<center><p style="font-size: 30px">Research</p></center><br>
 
 <center><p style="font-size: 24px">Membrane thermosensing</p></center><br>
 
 <img src="thermosensing_cover.png">
 
-> <p style="font-size: 16px" align="justify">Can a temperature-dependent protein-bilayer mechanical model account for the temperature sensing of cells?</p>
+> <p style="font-size: 16px" align="justify">We can model a chemoreceptor as a button with a 3-leaf clover cross-section shape in a bilayer with material constants, including unperturbed thicknesses, that are dependent on temperature.</p>
 
 <p style="font-size: 16px" align="justify">Membrane thermosensing...</p>
