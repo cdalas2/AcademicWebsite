@@ -13,11 +13,14 @@ content:
   filters:
     # The folders to display content from
     folders:
-      - papers
+      - more_references
     tag: ''
-    category: ''
+    categories: 
+      - 'synaptic-domains'
+      - 'emerin-domains'
+      - 'stochastic-lattice-models'
     publication_type: ''
-    author: 'C. Alas, T. R. Powers, and T. Kuriabova'
+    author: ''
     exclude_featured: false
     exclude_future: false
     exclude_past: false

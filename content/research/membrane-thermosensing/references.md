@@ -13,7 +13,7 @@ content:
   filters:
     # The folders to display content from
     folders:
-      - papers
+      - papers/dfsfssfd
     tag: ''
     category: ''
     publication_type: ''
