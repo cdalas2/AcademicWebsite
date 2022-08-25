@@ -26,15 +26,9 @@ main:
     parent: research
     url: /research/microorganisms-in-quasi-2d-membranes/
     weight: 40
-  - name: Projects
-    url: '/projects/'
-    weight: 20
   - name: Publications
     url: '/publications/'
     weight: 30
-  - name: Movies
-    url: '/movies/'
-    weight: 40
   - name: CBS Poster 2022
     url: '/posters/qcb-2022/qcb-2022-poster.pdf'
     weight: 50

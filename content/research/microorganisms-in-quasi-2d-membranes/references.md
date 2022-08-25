@@ -8,7 +8,7 @@ subtitle:
 
 # Position of this section on the page
 weight: 20
-
+featured: true
 content:
   # Filter content to display
   filters:

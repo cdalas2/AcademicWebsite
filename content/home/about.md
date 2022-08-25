@@ -96,10 +96,17 @@ content:
   filters:
     folders:
       - research
-      - pda-gallery
       - pda
       - contact
+      - papers
+      - posters
+      - talks
+    exclude_featured: true
+    exclude_future: true
   count: 10
+  archive:
+    enable: false
+    link: /post
 
 videotitle: '<p><b>My talk at APS Annual March Meeting (Chicago 2022)</b></p>'
 
