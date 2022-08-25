@@ -8,13 +8,12 @@ subtitle:
 
 # Position of this section on the page
 weight: 20
-featured: true
 content:
   # Filter content to display
   filters:
     # The folders to display content from
     folders:
-      - papers/dsfs
+      - papers
     tag: ''
     category: ''
     publication_type: ''
