@@ -1,6 +1,6 @@
 ---
 type: widget_page
-title: 'Protein-bilayer deformations'
+title: 'Protein-induced bilayer deformations'
 summary: 'Learn how protein shape can affect protein-bilayer deformations'
 date: "2022-08-04T00:00:00Z"
 
