@@ -13,9 +13,11 @@ content:
   filters:
     # The folders to display content from
     folders:
-      - more_references
+      - thermosensing_references
     tag: ''
-    categories: ['chemotaxis', 'thermosensing']
+    categories: 
+      - 'chemotaxis'
+      - 'thermosensing'
     publication_type:
     author: ''
     exclude_featured: false

@@ -13,7 +13,7 @@ content:
   filters:
     # The folders to display content from
     folders:
-      - more_references
+      - emerin_references
     tag: ''
     categories: 
       - 'synaptic-domains'
