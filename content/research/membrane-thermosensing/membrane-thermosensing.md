@@ -23,7 +23,7 @@ weight: 10
 
 <img src="thermosensing_cover.png">
 
-> <p style="font-size: 16px" align="justify">We can model a chemoreceptor as a button with a 3-leaf clover cross-section shape in a bilayer with material constants, including unperturbed thicknesses, that are dependent on temperature.</p>
+> <p style="font-size: 16px" align="justify">We can model a chemoreceptor as a button with a 3-leaf clover cross-section shape in a bilayer with material constants, including unperturbed thicknesses, that are dependent on temperature. (image credits: left side image with chemoreceptor structure and shape model comes from [Liu et. al, 2012, Haselwandter and Wingreen, 2014] and right side with warmer temperature decreasing bilayer thickness concept is from [Pan et. al., 2008].)</p>
 <br>
 <p style="font-size: 16px" align="justify">Bacteria motility has been observed for over 300 years. Some bacteria, like <i>Escherichia coli</i> have flagella, which are whip-like appendages, they can rotate in a helical motion such as to produce an anisotropic drag that propels them forward through fluid. In bulk fluid, <i>E. coli</i> performs a two state motion characterized by straight runs punctuated by fast tumbles in which the bacteria slow to a stop and re-orient their swimming direction [Adler, 1966]. In the presence of a chemoattractant or chemorepellant, the bacteria bias their motion via a process known as chemotaxis. When bacteria travel towards increasing chemoattractants or decreasing chemorepellants, the signaling pathway chemoreceptors through which <i>E. coli</i> control their flagellar motor reduce the rate of tumbles (re-orientations) resulting in the bacteria netting motion towards chemoattractants or away from chemorepellants [Paulick et. al, 2017].
 <br><br>

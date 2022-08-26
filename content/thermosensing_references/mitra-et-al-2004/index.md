@@ -31,6 +31,6 @@ publishDate: '2022-08-25T07:30:41.913047Z'
 publication_types:
 - '2'
 abstract: ''
-publication: '*Biophysics and Computational Biology*'
+publication: '*PNAS*'
 doi: 10.1073/pnas.0307332101
 ---
