@@ -13,13 +13,13 @@ content:
   filters:
     # The folders to display content from
     folders:
-      - papers/dfsfssfd
+      - more_references
     tag: ''
-    category: ''
-    publication_type: ''
+    categories: ['chemotaxis', 'thermosensing']
+    publication_type:
     author: ''
     exclude_featured: false
-    exclude_future: false
+    exclude_future: true
     exclude_past: false
   # Choose how many pages you would like to display (0 = all pages)
   count: 0
