@@ -25,7 +25,7 @@ weight: 10
 <img src="StochasticLatticeModel_ProteinDomains.png">
 
 > <p style="font-size: 16px" align="justify">Can we use a stochastic lattice model to predict experimentally observed properties of emerin's organization and self-assembly on the nuclear membrane? (image credits: left panel of image is from [(B) Li et. al, 2017] and right panel of image is from [Haselwandter et. al, 2011])</p>
-
+<br>
 <p style="font-size: 16px" align="justify">
   Emerin is a nuclear membrane protein (of mammalian cells) involved in the transduction of membrane mechanical signals between the cytoskeleton and the nucleoskeleton, and is thought to be central to a range of nuclear processes, including those which involve the maintenance of the architecture of the nucleus and its protection against mechanical stress.  When mutated or absent, emerin causes X-linked Emery-Dreifuss muscular dystrophy (EDMD). Superresolution fluorescence microscopy experiments show that when nuclei are presented with mechanical challenges, emerin mechanotransduction functions are coupled to changes in its oligomeric state and that nuclear shape adaptation against mechanical forces is governed by the self-assembly of emerin [Fernandez et. al, 2022]. In steady state, emerin organizes into monomer clusters about 200-300 nanometers in diameter, which envelope many smaller oligomer clusters, that are stabilized by emerin interactions with nuclear binding partners. Correct emerin interactions with nuclear binding partners and formation of oligomer clusters appear to be necessary for nuclei to adapt properly to mechanical stress, which is not what is observed of EDMD mutants.
   <br><br>
