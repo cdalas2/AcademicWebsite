@@ -54,9 +54,9 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/carlos-alas-6a4643160/
- # - icon: cv
-#    icon_pack: ai
-#    link: uploads/Resume_CDA.pdf
+  - icon: cv
+    icon_pack: ai
+    link: uploads/Resume_CDA.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ''
