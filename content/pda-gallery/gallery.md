@@ -37,6 +37,6 @@ design:
   columns: '1'
 ---
 <audio autoplay controls controlsList="nodownload">
-  <source src="Interstellar-First-Step-cover-Kyle-Landry.mp3" type="audio/mpeg">
+  <source src="Interstellar-Paul_C_Schmidt.mp3" type="audio/mpeg">
 </audio>
-The pieces in this collection were created to commemorate previous projects and achievements that are dear to me. Using the stochastic lattice model implemented by kinetic Monte Carlo, one can synthesize the following collection of pieces. [Music credit: <a href="https://www.youtube.com/watch?v=h9vj-p1yGLw">Interstellar - First Step (Hans Zimmer) Piano Cover - Kyle Landry]</a><br><br>
+The pieces in this collection were created to commemorate previous projects and achievements that are dear to me. Using the stochastic lattice model implemented by kinetic Monte Carlo, one can synthesize the following collection of pieces. [Music credit: <a href="https://www.youtube.com/watch?v=nseDr-7Ha5o">Interstellar (Hans Zimmer) Piano Cover - Paul C. Schmidt]</a><br><br>
