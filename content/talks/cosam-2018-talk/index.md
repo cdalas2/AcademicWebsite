@@ -5,7 +5,7 @@ title: 'Swimming of biological filamentous microorganisms in quasi-2D membranes'
 subtitle: ''
 summary: ''
 authors:
-  - C. Alas, T. Kuriabova
+  - C. Alas and T. Kuriabova
 tags: []
 categories: []
 date: '2018-01-01'
