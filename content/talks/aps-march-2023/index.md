@@ -31,5 +31,5 @@ publishDate: '2022-03-17T00:00:00.795971Z'
 publication_types:
 - '0'
 abstract:
-publication: '*APS March Meeting*. Caesar's Forum Convention Center, Las Vegas, NV, USA (<b>Upcoming</b>)'
+publication: '*APS March Meeting*. Caesars Forum Convention Center, Las Vegas, NV, USA (<b>Upcoming</b>)'
 ---
