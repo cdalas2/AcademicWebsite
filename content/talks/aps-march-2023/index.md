@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: 'Thermosensing by transmembrane proteins via the mechanics of bilayer-protein interactions'
+title: 'Thermosensing through membrane mechanics'
 subtitle: ''
 summary: ''
 authors:
@@ -31,5 +31,5 @@ publishDate: '2022-03-17T00:00:00.795971Z'
 publication_types:
 - '0'
 abstract:
-publication: '*APS March Meeting*. Las Vegas, NV, USA (<b>Upcoming</b>)'
+publication: '*APS March Meeting*. Caesar's Forum Convention Center, Las Vegas, NV, USA (<b>Upcoming</b>)'
 ---
