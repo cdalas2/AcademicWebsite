@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Thermosensing by transmembrane proteins via the mechanics of bilayer-protein interactions
+title: Thermosensing through membrane mechanics
 subtitle: ''
 summary: ''
 authors:
