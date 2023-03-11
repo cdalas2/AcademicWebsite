@@ -13,12 +13,10 @@ tags:
 - Biomolecules (q-bio.BM)
 - Quantitative Methods (q-bio.QM)
 - 'FOS: Physical sciences'
-- 'FOS: Physical sciences'
-- 'FOS: Biological sciences'
 - 'FOS: Biological sciences'
 categories: []
-date: '2022-01-01'
-lastmod: 2022-08-24T00:36:03-07:00
+date: '2023-01-01'
+lastmod: 2023-03-11T00:36:03-07:00
 featured: false
 draft: false
 
@@ -36,15 +34,15 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2022-08-24T07:36:03.270566Z'
+publishDate: '2023-02-06T07:36:03.270566Z'
 publication_types:
 - '3'
 abstract: ''
-publication: '*arXiv. (in review)*'
-doi: 10.48550/ARXIV.2208.05011
+publication: 'Physical Review E'
+doi: https://doi.org/10.1103/PhysRevE.107.024403
 links:
 - name: URL
-  url: https://arxiv.org/abs/2208.05011
+  url: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.107.024403
 
-url_pdf: 'https://arxiv.org/pdf/2208.05011.pdf'
+url_pdf: 'https://www.cdalas.com/uploads/PhysRevE.107.024403.pdf'
 ---

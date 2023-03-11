@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Protein shape and protein-induced bilayer midplane deformations
+title: Dependence of Piezo1 activation on protein shape.
 subtitle: ''
 summary: ''
 authors:

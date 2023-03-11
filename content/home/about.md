@@ -52,7 +52,7 @@ content:
         brightness: 1.2
         media: StochasticLatticeModel_ProteinDomains.png
         fit: contain
-    - title: '<br><br><br><p style = "font-size: 24px"><b>[Membrane thermosensing](/research/membrane-thermosensing)</b></p>'
+    - title: '<br><br><br><p style = "font-size: 24px"><b>[Thermosensing through membrane mechanics](/research/thermosensing-through-membrane-mechanics)</b></p>'
       content: '<p style = "font-size: 16px; color: white;">Can a temperature-dependent protein-bilayer mechanical model account for the temperature sensing of cells?</p>'
       align: left
       background:
