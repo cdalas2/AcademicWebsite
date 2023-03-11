@@ -1,6 +1,6 @@
 ---
 type: widget_page
-title: "Membrane thermosensing"
+title: "Thermosensing through membrane mechanics"
 summary: 'Cells might sense temperature through protein-bilayer mechanical interactions'
 date: "2022-08-04T00:00:00Z"
 image:
