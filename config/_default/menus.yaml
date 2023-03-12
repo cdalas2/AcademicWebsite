@@ -14,9 +14,9 @@ main:
     parent: research
     url: /research/stochastic-lattice-model-for-emerin-nanodomains/
     weight: 10
-  - name: Membrane thermosensing
+  - name: Thermosensing through membrane mechanics
     parent: research
-    url: /research/membrane-thermosensing/
+    url: /research/thermosensing-through-membrane-mechanics/
     weight: 20
   - name: Protein-induced bilayer deformations
     parent: research
