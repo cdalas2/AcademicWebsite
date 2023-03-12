@@ -19,7 +19,7 @@ weight: 10
 ---
 <center><p style="font-size: 30px">Research</p></center><br>
 
-<center><p style="font-size: 24px">Thermosensing though membrane mechanics</p></center><br>
+<center><p style="font-size: 24px">Thermosensing through membrane mechanics</p></center><br>
 
 <img src="thermosensing_cover.png">
 
