@@ -8,8 +8,8 @@ authors:
 - C. D. Alas and C. A. Haselwandter
 tags:
 categories: []
-date: '2023-01-01'
-lastmod: 2023-03-10T00:36:03-07:00
+date: '2023-03-09'
+lastmod: 2023-03-09T00:36:03-07:00
 featured: false
 draft: false
 
@@ -27,7 +27,7 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2023-03-10T07:36:03.270566Z'
+publishDate: '2023-03-09T07:36:03.270566Z'
 publication_types:
 - '0'
 abstract: ''
