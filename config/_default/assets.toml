@@ -1,0 +1,9 @@
+[assets]
+  [assets.css]
+    [assets.css.custom]
+      name = "owl-carousel"
+      src = "/assets/owl-carousel/owl.carousel.min.css"
+  [assets.js]
+    [assets.js.custom]
+      name = "owl-carousel"
+      src = "/assets/owl-carousel/owl.carousel.min.js"

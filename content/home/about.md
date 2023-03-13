@@ -108,6 +108,6 @@ content:
     enable: false
     link: /post
 
-videotitle: '<p><b>My talk at APS Annual March Meeting (Las Vegas 2023)</b></p>'
-
+video1title: '<p><b>My talk at APS Annual March Meeting (Las Vegas 2023)</b></p>'
+video2title: '<p><b>My talk at APS Annual March Meeting (Chicago 2022)</b></p>'
 ---

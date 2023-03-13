@@ -21,6 +21,34 @@
 
 <!-- About widget -->
 
+  <!-- <link rel="stylesheet" href="owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css"> -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        autoplay:true,
+        autoplayTimeout:5000,
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:3
+          },
+          1000:{
+            items:5
+          }
+        }
+      })
+    });
+  </script> -->
+
 <style>
       div.autoscroll {
         background-color: transparent;
@@ -197,11 +225,37 @@
         </div>
         <div class="row pt-0 mt-5 mt-lg-5 pt-lg-5 " style="border-top: 5px solid #EAEAEA">
           <div class="col-12">
-            <b><p style="text-align:left; font-size: 20px;">{{ $page.Params.videotitle | markdownify | emojify }}</p></b>
+            <!-- <div class="owl-carousel owl-theme">
+              <div class="item">
+                <iframe class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/lc63mDu1rUc"
+                  title="My talk at APS March Meeting (Las Vegas 2023)"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe></div>
+              <div class="item">
+                <iframe class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/bMl28r7R7YY"
+                  title="My talk at APS March Meeting (Chicago 2022)"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div> -->
+            <b><p style="text-align:left; font-size: 20px;">{{ $page.Params.video1title | markdownify | emojify }}</p></b>
             <div class="embed-responsive embed-responsive-4by3">
               <iframe class="embed-responsive-item"
                     src="https://www.youtube.com/embed/lc63mDu1rUc"
                     title="My talk at APS March Meeting (Las Vegas 2023)"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+              </iframe>
+            </div>
+            <b><p style="text-align:left; font-size: 20px;">{{ $page.Params.video2title | markdownify | emojify }}</p></b>
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/bMl28r7R7YY"
+                    title="My talk at APS March Meeting (Chicago 2022)"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
               </iframe>
