@@ -20,35 +20,6 @@
 {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
 
 <!-- About widget -->
-
-  <!-- <link rel="stylesheet" href="owl.carousel.min.css">
-  <link rel="stylesheet" href="owl.theme.default.min.css"> -->
-
-  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:false,
-        autoplay:true,
-        autoplayTimeout:5000,
-        responsive:{
-          0:{
-            items:1
-          },
-          600:{
-            items:3
-          },
-          1000:{
-            items:5
-          }
-        }
-      })
-    });
-  </script> -->
-
 <style>
       div.autoscroll {
         background-color: transparent;
@@ -82,63 +53,62 @@
       <div class="col-lg-3 mt-5 mt-lg-0 mb-auto px-lg-0 order-lg-1 order-2" style="border: 5px solid grey">
         <div class="autoscroll">
           <div id="profile">
+            <div class="portrait-title" style="position: relative; bottom: 30px">
+              <p style="font-family:Verdana;">
+                <b>
+                  {{ if $page.Params.About_title }}
+                    {{$page.Params.About_title | markdownify | emojify }}
+                  {{ end }}
+                </b>
+              </p>
+            </div>
+            <div class="portrait" style="position: relative; bottom: 30px">
+              {{ if site.Params.features.avatar.gravatar }}
+              <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=270')" alt="{{$person_page.Title}}">
+              {{ else if $avatar }}
+              {{ $avatar_image := $avatar.Fill "360x360 Top" }}
+              <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}"
+                  width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}"
+                  src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}">
+              {{ end }}
 
-          <div class="portrait-title" style="position: relative; bottom: 30px">
-            <p style="font-family:Verdana;">
-              <b>
-                {{ if $page.Params.About_title }}
-                  {{$page.Params.About_title | markdownify | emojify }}
-                {{ end }}
-              </b>
-            </p>
-          </div>
-          <div class="portrait" style="position: relative; bottom: 30px">
-            {{ if site.Params.features.avatar.gravatar }}
-            <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=270')" alt="{{$person_page.Title}}">
-            {{ else if $avatar }}
-            {{ $avatar_image := $avatar.Fill "360x360 Top" }}
-            <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}"
-                 width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}"
-                 src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}">
-            {{ end }}
+              {{ with $person.role }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
 
-            {{ with $person.role }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
+              {{ range $person.organizations }}
+              <h3>
+                {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+                <span>{{ .name }}</span>
+                {{ if .url }}</a>{{ end }}
+              </h3>
+              {{ end }}
+            </div>
 
-            {{ range $person.organizations }}
-            <h3>
-              {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
-              <span>{{ .name }}</span>
-              {{ if .url }}</a>{{ end }}
-            </h3>
-            {{ end }}
-          </div>
+            <ul style="position: relative; bottom: 25px" class="network-icon" aria-hidden="true">
+              {{ range $person.social }}
+              {{ $pack := or .icon_pack "fas" }}
+              {{ $pack_prefix := $pack }}
+              {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+                {{ $pack_prefix = "fa" }}
+              {{ end }}
+              {{ $link := .link }}
+              {{ $scheme := (urls.Parse $link).Scheme }}
+              {{ $target := "" }}
+              {{ if not $scheme }}
+                {{ $link = .link | relLangURL }}
+              {{ else if in (slice "http" "https") $scheme }}
+                {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+              {{ end }}
+              <li>
+                <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
+                  <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
+                </a>
+              </li>
+              {{ end }}
+            </ul>
 
-          <ul style="position: relative; bottom: 25px" class="network-icon" aria-hidden="true">
-            {{ range $person.social }}
-            {{ $pack := or .icon_pack "fas" }}
-            {{ $pack_prefix := $pack }}
-            {{ if in (slice "fab" "fas" "far" "fal") $pack }}
-              {{ $pack_prefix = "fa" }}
-            {{ end }}
-            {{ $link := .link }}
-            {{ $scheme := (urls.Parse $link).Scheme }}
-            {{ $target := "" }}
-            {{ if not $scheme }}
-              {{ $link = .link | relLangURL }}
-            {{ else if in (slice "http" "https") $scheme }}
-              {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-            {{ end }}
-            <li>
-              <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
-                <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
-              </a>
-            </li>
-            {{ end }}
-          </ul>
-
-          <div class= "portrait caption" style="position: relative; bottom: -5px">
-              <p style="text-align:justify; font-size: 16px;">{{ $person.caption | markdownify | emojify }}</p>
-          </div>
+            <div class= "portrait caption" style="position: relative; bottom: -5px">
+                <p style="text-align:justify; font-size: 16px;">{{ $person.caption | markdownify | emojify }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -223,26 +193,19 @@
                 </a>
               </div>
         </div>
-        <div class="row pt-0 mt-5 mt-lg-5 pt-lg-5 " style="border-top: 5px solid #EAEAEA">
-          <div class="col-12">
-            <!-- <div class="owl-carousel owl-theme">
-              <div class="item">
-                <iframe class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/lc63mDu1rUc"
-                  title="My talk at APS March Meeting (Las Vegas 2023)"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-                </iframe></div>
-              <div class="item">
-                <iframe class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/bMl28r7R7YY"
-                  title="My talk at APS March Meeting (Chicago 2022)"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-                </iframe>
-              </div>
+        <div class="row pt-0 mt-5 mt-lg-5 pt-lg-4 " style="border-top: 5px solid #EAEAEA">
+          <div class="col-12"></div>
             </div> -->
-            <b><p style="text-align:left; font-size: 20px;">{{ $page.Params.video1title | markdownify | emojify }}</p></b>
+            <b><p style="text-align:left; font-size: 20px;">{{ $page.Params.videoPlaylistTitle | markdownify | emojify }}</p></b>
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/videoseries?list=PLb6PDoPlxpYMXgXqJ_9qHXK19D2x9kP7h"
+                    title="My talks at APS March Meetings (Las Vegas 2023 & Chicago 2022)"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+              </iframe>
+            </div>
+            <!-- <b><p style="text-align:left; font-size: 20px;">{{ $page.Params.video1title | markdownify | emojify }}</p></b>
             <div class="embed-responsive embed-responsive-4by3">
               <iframe class="embed-responsive-item"
                     src="https://www.youtube.com/embed/lc63mDu1rUc"
@@ -250,8 +213,8 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
               </iframe>
-            </div>
-            <b><p style="text-align:left; font-size: 20px;">{{ $page.Params.video2title | markdownify | emojify }}</p></b>
+            </div> -->
+            <!-- <b><p style="text-align:left; font-size: 20px;">{{ $page.Params.video2title | markdownify | emojify }}</p></b>
             <div class="embed-responsive embed-responsive-4by3">
               <iframe class="embed-responsive-item"
                     src="https://www.youtube.com/embed/bMl28r7R7YY"
@@ -259,7 +222,7 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
               </iframe>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

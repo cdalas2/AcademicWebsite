@@ -110,4 +110,5 @@ content:
 
 video1title: '<p><b>My talk at APS Annual March Meeting (Las Vegas 2023)</b></p>'
 video2title: '<p><b>My talk at APS Annual March Meeting (Chicago 2022)</b></p>'
+videoPlaylistTitle: '<p><b>Playlist of my APS March Meeting talks (Las Vegas 2023 & Chicago 2022)</b></p>'
 ---
