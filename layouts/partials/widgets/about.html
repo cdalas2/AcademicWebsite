@@ -20,6 +20,36 @@
 {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
 
 <!-- About widget -->
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      autoplay:true,
+      autoplayTimeout:5000,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:1
+        },
+        1000:{
+          items:1
+        }
+      }
+    })
+  });
+</script>
+</body>
 <style>
       div.autoscroll {
         background-color: transparent;
@@ -194,8 +224,7 @@
               </div>
         </div>
         <div class="row pt-0 mt-5 mt-lg-5 pt-lg-4 " style="border-top: 5px solid #EAEAEA">
-          <div class="col-12"></div>
-            </div> -->
+          <div class="col-12">
             <b><p style="text-align:left; font-size: 20px;">{{ $page.Params.videoPlaylistTitle | markdownify | emojify }}</p></b>
             <div class="embed-responsive embed-responsive-4by3">
               <iframe class="embed-responsive-item"
