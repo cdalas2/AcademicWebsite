@@ -226,19 +226,20 @@
         </div>
       </div>
       <div class="col-lg-3 mt-lg-0 mt-0 order-lg-3 order-3">
-        <div class="video-column-title">
-          <p style="font-family:Verdana">
-            <center>
-              <b>
-              {{ if $st.Params.video_column_title }}
-                {{$st.Params.video_column_title | markdownify | emojify }}
-              {{ end }}
-              </b>
-            </center>
-          </p>
-        </div>
         <div class="autoscroll">
-          <div id="video-container"></div>
+          <div id="video-container" style="position: relative; bottom: 20px">
+            <div class="video-column-title">
+              <p style="font-family:Verdana">
+                <center>
+                  <b>
+                  {{ if $st.Params.video_column_title }}
+                    {{$st.Params.video_column_title | markdownify | emojify }}
+                  {{ end }}
+                  </b>
+                </center>
+              </p>
+            </div>
+          </div>
           <script>
             function onYouTubeIframeAPIReady() {
               var channelID = "UC9OeZkIwhzfv-_Cb7fCikLQ"; // Replace with your channel ID
