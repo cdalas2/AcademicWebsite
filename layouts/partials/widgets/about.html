@@ -229,69 +229,69 @@
         <!-- <div class="autoscroll"> -->
           <div id="my-container">
             <div id="ytplayer"></div>
-              <script>
-                var tag = document.createElement('script');
-                tag.src = "https://www.youtube.com/iframe_api";
-                var firstScriptTag = document.getElementsByTagName('script')[0];
-                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            <script>
+              var tag = document.createElement('script');
+              tag.src = "https://www.youtube.com/iframe_api";
+              var firstScriptTag = document.getElementsByTagName('script')[0];
+              firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-                var player;
-                function onYouTubeIframeAPIReady() {
-                  player = new YT.Player('ytplayer', {
-                    // height: '360',
-                    // width: '640',
-                    playerVars: {
-                      'autoplay': 0,
-                      'controls': 1,
-                      'rel': 0,
-                      'showinfo': 0
-                    },
-                    events: {
-                      'onReady': onPlayerReady,
-                      'onStateChange': onPlayerStateChange
-                    }
-                  });
-                }
-
-                function onPlayerReady(event) {
-                  // Get the user's watch history
-                  $.ajax({
-                    url: "https://www.googleapis.com/youtube/v3/videos",
-                    dataType: "json",
-                    type: "GET",
-                    data: {
-                      key: "AIzaSyDO-EO2fSZqXc9Y1TM-pmaU0SIIgVRBv7I",
-                      part: "snippet",
-                      maxResults: 10,
-                      fields: "items(UCZqMo1nngW6XlQj5sqiI19g,snippet(title,description,thumbnails(high)))",
-                      chart: "mostRecent",
-                      myRating: "like"
-                    },
-                    success: function(data) {
-                      // Build the playlist array from the watch history data
-                      var playlist = [];
-                      $.each(data.items, function(index, video) {
-                        playlist.push(video.id);
-                      });
-                      // Load the playlist into the player
-                      event.target.loadPlaylist({
-                        playlist: playlist
-                      });
-                    }
-                  });
-                }
-
-                function onPlayerStateChange(event) {
-                  if (event.data == YT.PlayerState.PLAYING && !done) {
-                    setTimeout(stopVideo, 6000);
-                    done = true;
+              var player;
+              function onYouTubeIframeAPIReady() {
+                player = new YT.Player('ytplayer', {
+                  height: '360',
+                  width: '640',
+                  playerVars: {
+                    'autoplay': 0,
+                    'controls': 1,
+                    'rel': 0,
+                    'showinfo': 0
+                  },
+                  events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
                   }
-                }
+                });
+              }
 
-                function stopVideo() {
-                  player.stopVideo();
+              function onPlayerReady(event) {
+                // Get the user's watch history
+                $.ajax({
+                  url: "https://www.googleapis.com/youtube/v3/search",
+                  dataType: "json",
+                  type: "GET",
+                  data: {
+                    key: "AIzaSyDO-EO2fSZqXc9Y1TM-pmaU0SIIgVRBv7I",
+                    part: "snippet",
+                    maxResults: 10,
+                    channelId: "UCZqMo1nngW6XlQj5sqiI19g",
+                    order: "date",
+                    type: "video"
+                  },
+                  success: function(data) {
+                    // Build the playlist array from the channel's recent uploads
+                    var playlist = [];
+                    $.each(data.items, function(index, video) {
+                      playlist.push(video.id.videoId);
+                    });
+                    // Load the playlist into the player
+                    event.target.loadPlaylist({
+                      playlist: playlist
+                    });
+                  }
+                });
+              }
+
+              function onPlayerStateChange(event) {
+                if (event.data == YT.PlayerState.PLAYING && !done) {
+                  setTimeout(stopVideo, 6000);
+                  done = true;
                 }
-              </script>
+              }
+
+              function stopVideo() {
+                player.stopVideo();
+              }
+            </script>
           </div>
           <!-- <div style="position: relative; bottom: 20px">
               {{/* Pages Widget */}}
