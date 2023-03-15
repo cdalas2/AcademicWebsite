@@ -244,15 +244,13 @@
             function onYouTubeIframeAPIReady() {
               var videoIds = ["idYUy3hf3D0","KzSpKf4l6k4","FD4DeN81ODY","pjoojqw877A","FfXJsvxhRQk"];
               var apiKey = "AIzaSyBr85hWkmBy4e2LvVY6F4y0U4soZDp3bCg";
-              var maxResults = 2;
+              // var maxResults = 2;
               var videoList = document.getElementById("video-container");
               var request = new XMLHttpRequest();
               request.open(
                 "GET",
                 "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=" +
                   videoIds.join(",") +
-                  "&maxResults=" +
-                  maxResults +
                   "&key=" +
                   apiKey +
                   "&order=date&type=video"
