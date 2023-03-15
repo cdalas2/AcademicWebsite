@@ -271,9 +271,9 @@
                       videoLink +
                       "' target='_blank'><img src='" +
                       videoThumbnail +
-                      "'><br>" +
+                      "'><br><span class='video-title'>" +
                       videoTitle +
-                      "</a>";
+                      "</span></a>";
                     videoList.appendChild(videoItem);
                   }
                 } else {
@@ -296,7 +296,7 @@
               max-width: 100%;
               height: auto;
             }
-            .videoItem {
+            .video-title {
               font-size: 18px; /* adjust the font size as needed */
               font-family: Arial, sans-serif; /* set the font family as needed */
               color: #FF0000; /* adjust the font color as needed */
