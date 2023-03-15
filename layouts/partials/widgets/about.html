@@ -226,17 +226,17 @@
         </div>
       </div>
       <div class="col-lg-3 mt-lg-0 mt-5 order-lg-3 order-3">
-        <!-- <div class="recent-title">
+        <div class="video-column-title">
           <p style="font-family:Verdana">
             <center>
               <b>
-              {{ if $st.Params.recent_title }}
-                {{$st.Params.recent_title | markdownify | emojify }}
+              {{ if $st.Params.video_column_title }}
+                {{$st.Params.video_column_title | markdownify | emojify }}
               {{ end }}
               </b>
             </center>
           </p>
-        </div> -->
+        </div>
         <div class="autoscroll">
           <div id="video-container"></div>
           <script>
