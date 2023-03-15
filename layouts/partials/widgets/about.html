@@ -238,13 +238,13 @@
               var request = new XMLHttpRequest();
               request.open(
                 "GET",
-                "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=" +
-                  maxResults +
-                  "&playlistID=" +
+                "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=" +
                   playlistID +
+                  "&maxResults=" +
+                  maxResults +
                   "&key=" +
-                  apiKey
-                  // "&order=date&type=video"
+                  apiKey +
+                  "&order=date&type=video"
               );
               request.onload = function () {
                 if (request.status === 200) {
