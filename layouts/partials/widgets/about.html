@@ -227,77 +227,52 @@
       </div>
       <div class="col-lg-3 mt-lg-0 mt-5 order-lg-3 order-3">
         <div class="autoscroll">
-          <!-- <div id="my-container">
-            <div id="ytplayer"></div>
-            <script>
-              var tag = document.createElement('script');
-              tag.src = "https://www.youtube.com/iframe_api";
-              var firstScriptTag = document.getElementsByTagName('script')[0];
-              firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-              var player;
-              var done = false;
-              function onYouTubeIframeAPIReady() {
-                player = new YT.Player('ytplayer', {
-                  height: '200',
-                  width: '200',
-                  playerVars: {
-                    'autoplay': 0,
-                    'controls': 1,
-                    'rel': 0,
-                    'showinfo': 0
-                  },
-                  events: {
-                    'onReady': onPlayerReady,
-                    'onStateChange': onPlayerStateChange
+          <div id="video-container"></div>
+          <script>
+            function onYouTubeIframeAPIReady() {
+              var channelID = "UCnfaBjtUeuVoUrTuBBGH40g"; // Replace with your channel ID
+              var apiKey = "AIzaSyDO-EO2fSZqXc9Y1TM-pmaU0SIIgVRBv7I"; // Replace with your API key
+              var maxResults = 10;
+              var videoList = document.getElementById("video-container");
+              var request = new XMLHttpRequest();
+              request.open(
+                "GET",
+                "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" +
+                  channelID +
+                  "&maxResults=" +
+                  maxResults +
+                  "&key=" +
+                  apiKey
+              );
+              request.onload = function () {
+                if (request.status === 200) {
+                  var data = JSON.parse(request.responseText);
+                  for (var i = 0; i < data.items.length; i++) {
+                    var videoId = data.items[i].id.videoId;
+                    var videoTitle = data.items[i].snippet.title;
+                    var videoThumbnail = data.items[i].snippet.thumbnails.default.url;
+                    var videoLink = "https://www.youtube.com/watch?v=" + videoId;
+                    var videoItem = document.createElement("div");
+                    videoItem.innerHTML =
+                      "<a href='" +
+                      videoLink +
+                      "' target='_blank'><img src='" +
+                      videoThumbnail +
+                      "'><br>" +
+                      videoTitle +
+                      "</a>";
+                    videoList.appendChild(videoItem);
                   }
-                });
-              }
-
-              function onPlayerReady(event) {
-                // Get the user's watch history
-                $.ajax({
-                  url: "https://www.googleapis.com/youtube/v3/search",
-                  dataType: "json",
-                  type: "GET",
-                  data: {
-                    key: "AIzaSyDO-EO2fSZqXc9Y1TM-pmaU0SIIgVRBv7I",
-                    part: "snippet",
-                    maxResults: 10,
-                    channelId: "UCnfaBjtUeuVoUrTuBBGH40g",
-                    order: "date",
-                    type: "video"
-                  },
-                  // headers: {
-                  //   Referer: "https://www.cdalas.com/"
-                  // },
-                  success: function(data) {
-                    // Build the playlist array from the channel's recent uploads
-                    var playlist = [];
-                    $.each(data.items, function(index, video) {
-                      playlist.push(video.id.videoId);
-                    });
-                    // Load the playlist into the player
-                    event.target.loadPlaylist({
-                      playlist: playlist
-                    });
-                  }
-                });
-              }
-
-              function onPlayerStateChange(event) {
-                if (event.data == YT.PlayerState.PLAYING && !done) {
-                  setTimeout(stopVideo, 6000);
-                  done = true;
+                } else {
+                  console.log("Error loading videos");
                 }
-              }
+              };
+              request.send();
+            }
+          </script>
+          <script src="https://www.youtube.com/iframe_api"></script>
 
-              function stopVideo() {
-                player.stopVideo();
-              }
-            </script>
-          </div> -->
-          <div style="position: relative; bottom: 20px">
+          <!-- <div style="position: relative; bottom: 20px">
               {{/* Pages Widget */}}
 
               <div class="recent-title">
@@ -416,7 +391,7 @@
                     </a>
                   </div>
                 {{ end }}
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
