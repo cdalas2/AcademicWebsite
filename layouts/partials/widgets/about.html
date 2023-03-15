@@ -231,20 +231,20 @@
           <div id="video-container"></div>
           <script>
             function onYouTubeIframeAPIReady() {
-              var listID = "PLcnlf7iLBn4PVOSEVvMgPHWLjaWNX20a6"; // Replace with your channel ID
+              var playlistID = "PLcnlf7iLBn4PVOSEVvMgPHWLjaWNX20a6"; // Replace with your channel ID
               var apiKey = "AIzaSyDO-EO2fSZqXc9Y1TM-pmaU0SIIgVRBv7I"; // Replace with your API key
-              var maxResults = 10;
+              var maxResults = 30;
               var videoList = document.getElementById("video-container");
               var request = new XMLHttpRequest();
               request.open(
                 "GET",
                 "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistID=" +
-                  listID +
+                  playlistID +
                   "&maxResults=" +
                   maxResults +
                   "&key=" +
                   apiKey + 
-                  "&order=date&type=video"
+                  // "&order=date&type=video"
               );
               request.onload = function () {
                 if (request.status === 200) {
