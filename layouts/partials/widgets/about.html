@@ -231,15 +231,15 @@
           <div id="video-container"></div>
           <script>
             function onYouTubeIframeAPIReady() {
-              var channelID = "UCnfaBjtUeuVoUrTuBBGH40g"; // Replace with your channel ID
+              var listID = "PLcnlf7iLBn4PVOSEVvMgPHWLjaWNX20a6"; // Replace with your channel ID
               var apiKey = "AIzaSyDO-EO2fSZqXc9Y1TM-pmaU0SIIgVRBv7I"; // Replace with your API key
               var maxResults = 10;
               var videoList = document.getElementById("video-container");
               var request = new XMLHttpRequest();
               request.open(
                 "GET",
-                "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" +
-                  channelID +
+                "https://www.googleapis.com/youtube/v3/search?part=snippet&playlistId=" +
+                  listID +
                   "&maxResults=" +
                   maxResults +
                   "&key=" +
