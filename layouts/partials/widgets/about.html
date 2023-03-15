@@ -267,6 +267,9 @@
                     order: "date",
                     type: "video"
                   },
+                  headers: {
+                    Referer: "https://www.cdalas.com/"
+                  }
                   success: function(data) {
                     // Build the playlist array from the channel's recent uploads
                     var playlist = [];
