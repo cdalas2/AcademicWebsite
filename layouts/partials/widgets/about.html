@@ -226,6 +226,7 @@
         </div>
       </div>
       <div class="col-lg-3 mt-lg-0 mt-5 order-lg-3 order-3">
+        <h2>ChatGPT Videos</h2>
         <div class="autoscroll">
           <div id="video-container"></div>
           <script>
@@ -250,7 +251,7 @@
                   for (var i = 0; i < data.items.length; i++) {
                     var videoId = data.items[i].id.videoId;
                     var videoTitle = data.items[i].snippet.title;
-                    var videoThumbnail = data.items[i].snippet.thumbnails.default.url;
+                    var videoThumbnail = data.items[i].snippet.thumbnails.medium.url;
                     var videoLink = "https://www.youtube.com/watch?v=" + videoId;
                     var videoItem = document.createElement("div");
                     videoItem.innerHTML =
