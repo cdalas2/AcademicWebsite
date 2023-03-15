@@ -243,7 +243,8 @@
                   "&maxResults=" +
                   maxResults +
                   "&key=" +
-                  apiKey
+                  apiKey + 
+                  "&order=date&type=video"
               );
               request.onload = function () {
                 if (request.status === 200) {
