@@ -41,7 +41,7 @@ design:
 #    # Text color (true=light, false=dark, or remove for the dynamic theme color).
 #    text_color_light: true
 video_column_title: 'Deep Learning TV'
-recent_title: 'Recent Activity'
+# recent_title: 'Recent Activity'
 content:
   slides:
     - title: '<br><br><br><p style = "font-size: 24px"><b>[Stochastic lattice model for emerin nanodomains](/research/stochastic-lattice-model-for-emerin-nanodomains)</b></p>'
@@ -94,20 +94,21 @@ content:
 #        icon_pack: fas
 #        text: '<p style = "font-size: 32px">Join Us</p>'
 #        url: /contact/]
-  filters:
-    folders:
-      - research
-      - pda
-      - contact
-      - papers
-      - posters
-      - talks
-    exclude_featured: true
-    exclude_future: true
-  count: 10
-  archive:
-    enable: false
-    link: /post
+###recent activity filters
+  # filters:
+  #   folders:
+  #     - research
+  #     - pda
+  #     - contact
+  #     - papers
+  #     - posters
+  #     - talks
+  #   exclude_featured: true
+  #   exclude_future: true
+  # count: 10
+  # archive:
+  #   enable: false
+  #   link: /post
 
 video1title: '<p><b>My talk at APS Annual March Meeting (Las Vegas 2023)</b></p>'
 video2title: '<p><b>My talk at APS Annual March Meeting (Chicago 2022)</b></p>'
