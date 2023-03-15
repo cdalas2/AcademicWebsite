@@ -242,15 +242,15 @@
           </div>
           <script>
             function onYouTubeIframeAPIReady() {
-              var channelID = "UC9OeZkIwhzfv-_Cb7fCikLQ"; // Replace with your channel ID
-              var apiKey = "AIzaSyBr85hWkmBy4e2LvVY6F4y0U4soZDp3bCg"; // Replace with your API key
-              var maxResults = 1;
+              var videoIds = ["idYUy3hf3D0","KzSpKf4l6k4","FD4DeN81ODY","pjoojqw877A","FfXJsvxhRQk"];
+              var apiKey = "AIzaSyBr85hWkmBy4e2LvVY6F4y0U4soZDp3bCg";
+              var maxResults = 2;
               var videoList = document.getElementById("video-container");
               var request = new XMLHttpRequest();
               request.open(
                 "GET",
-                "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=" +
-                  channelID +
+                "https://www.googleapis.com/youtube/v3/videos?part=snippet&channelId=" +
+                  videoIds.join(",") +
                   "&maxResults=" +
                   maxResults +
                   "&key=" +
