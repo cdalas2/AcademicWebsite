@@ -253,14 +253,13 @@
                 "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=" +
                   videoIds.join(",") +
                   "&key=" +
-                  apiKey +
-                  "&order=date&type=video"
+                  apiKey
               );
               request.onload = function () {
                 if (request.status === 200) {
                   var data = JSON.parse(request.responseText);
                   for (var i = 0; i < data.items.length; i++) {
-                    var videoId = data.items[i].id.videoId;
+                    var videoId = data.items[i].id;
                     var videoTitle = data.items[i].snippet.title;
                     var videoThumbnail = data.items[i].snippet.thumbnails.medium.url;
                     var videoLink = "https://www.youtube.com/watch?v=" + videoId;
