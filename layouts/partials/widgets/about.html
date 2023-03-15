@@ -265,6 +265,7 @@
                     var videoThumbnail = data.items[i].snippet.thumbnails.medium.url;
                     var videoLink = "https://www.youtube.com/watch?v=" + videoId;
                     var videoItem = document.createElement("div");
+                    videoItem.classList.add("video-item");
                     videoItem.innerHTML =
                       "<a href='" +
                       videoLink +
