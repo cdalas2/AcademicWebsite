@@ -1,6 +1,6 @@
 ---
 title: Trojan Red & Gold USC PHYS
-summary: To mark the beginning of my PhD journey in Physics at USC
+summary: '{{< typography font="Lato" size="26px" weight="100">}}To mark the beginning of my PhD journey in Physics at USC {{< /typography >}}'
 tags:
 date: '2018-08-15T00:00:00Z'
 

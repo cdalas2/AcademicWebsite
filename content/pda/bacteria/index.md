@@ -1,6 +1,6 @@
 ---
 title: Monoflagellate Bacteria Swimming
-summary: For my first peer-reviewed academic publication
+summary: '{{< typography font="Lato" size="26px" weight="100">}}For my first peer-reviewed academic publication{{< /typography >}}'
 tags:
 date: '2021-01-29T00:00:00Z'
 

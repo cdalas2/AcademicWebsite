@@ -1,6 +1,6 @@
 ---
 title: Rainbow Sherbet Lipid Bilayer
-summary: For my first PhD paper submission for peer-review
+summary: '{{< typography font="Lato" size="26px" weight="100">}}For my first PhD paper submission for peer-review{{< /typography >}}'
 tags:
 date: '2022-08-08T00:00:00Z'
 

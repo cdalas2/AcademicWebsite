@@ -1,6 +1,6 @@
 ---
 title: Travelers Red Umbrella
-summary: To mark the success of my data science summer 2022 internship at Travelers.
+summary: '{{< typography font="Lato" size="26px" weight="100">}}To mark the success of my data science summer 2022 internship at Travelers {{< /typography >}}'
 tags:
 date: '2022-08-12T00:00:00Z'
 

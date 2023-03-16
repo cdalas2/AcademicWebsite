@@ -36,4 +36,8 @@ design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
   columns: '1'
 ---
-<p><b><center>Posters</center></b></p>
+<center>
+{{< typography font="Merriweather" size="30px" weight="bold">}}
+  Posters
+{{< /typography >}}
+</center>

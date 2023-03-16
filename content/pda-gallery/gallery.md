@@ -39,4 +39,9 @@ design:
 <audio autoplay controls controlsList="nodownload">
   <source src="Interstellar-Paul_C_Schmidt.mp3" type="audio/mpeg">
 </audio>
-The pieces in this collection were created to commemorate previous projects and achievements that are dear to me. Using the stochastic lattice model implemented by kinetic Monte Carlo, one can synthesize the following collection of pieces. [Music credit: <a href="https://www.youtube.com/watch?v=nseDr-7Ha5o">Interstellar (Hans Zimmer) Piano Cover - Paul C. Schmidt]</a><br><br>
+{{< typography font="Lato:wght@100" size="0px">}}
+{{< /typography >}}
+{{< typography font="Lato" size="26px" weight="100">}}
+The pieces in this collection were created to commemorate previous projects and achievements that are dear to me. Using the stochastic lattice model implemented by kinetic Monte Carlo, one can synthesize the following collection of pieces. [Music credit: <a href="https://www.youtube.com/watch?v=nseDr-7Ha5o">Interstellar (Hans Zimmer) Piano Cover - Paul C. Schmidt]</a>
+{{< /typography >}}
+<br><br>
