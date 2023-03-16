@@ -33,7 +33,7 @@ weight: 10
 {{< typography font="Roboto Serif:wght@100" size="0px">}}
 {{< /typography >}}
 > {{< typography font="Roboto Serif" size="18px" weight="100">}}
-    We can model a chemoreceptor as a button with a 3-leaf clover cross-section shape in a bilayer with material constants, including unperturbed thicknesses, that are dependent on temperature. (image credits: left side image with chemoreceptor structure and shape model comes from [Liu et. al, 2012, Haselwandter and Wingreen, 2014] and right side with warmer temperature decreasing bilayer thickness concept is from [Pan et. al., 2008].)
+    We can model a chemoreceptor as a button with a 3-leaf clover cross-section shape in a bilayer with material constants, including unperturbed thicknesses, that are dependent on temperature. (image credits: left side image with chemoreceptor structure and shape model comes from [Liu et. al, 2012, Haselwandter and Wingreen, 2014] and right side with warmer temperature decreasing bilayer thickness concept is from [Pan et. al., 2008] where I created the warm and cold bilayer images in Blender.)
   {{< /typography >}}
 
 <br>
