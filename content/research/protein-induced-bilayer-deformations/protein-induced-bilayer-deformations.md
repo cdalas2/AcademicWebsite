@@ -25,12 +25,13 @@ weight: 10
 
 <img src="BilayerDeformationColorMaps.png">
 
-> <p style="font-size: 16px" align="justify">Bilayer deformation surface colormaps induced by proteins of non-circular cross-sections calculated by our boundary value method (BVM).</p>
+<p style="font-size: 16px" align="justify">Bilayer deformation surface colormaps induced by proteins of non-circular cross-sections calculated by our boundary value method (BVM).</p>
 <br>
 <center>
+{{youtube bMl28r7R7YY}}
 <div>
 <iframe class="embed-responsive-item"
-  src="https://www.youtube.com/watch?v=bMl28r7R7YY&t=63s"
+  src="https://www.youtube.com/watch?v=bMl28r7R7YY"
   title="Dependence of protein-induced bilayer deformations on protein shape"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen>
