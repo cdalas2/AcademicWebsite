@@ -25,7 +25,7 @@ weight: 10
 
 <img src="BilayerDeformationColorMaps.png">
 
-<p style="font-size: 16px" align="justify">Bilayer deformation surface colormaps induced by proteins of non-circular cross-sections calculated by our boundary value method (BVM).</p>
+> <p style="font-size: 16px" align="justify">Bilayer deformation surface colormaps induced by proteins of non-circular cross-sections calculated by our boundary value method (BVM).</p>
 <br>
 <p style="font-size: 16px" align="justify">I gave a talk on this work at the APS March Meeting at Chicago, IL in 2022.</p>
 
