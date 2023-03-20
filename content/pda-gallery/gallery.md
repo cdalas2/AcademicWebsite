@@ -42,6 +42,6 @@ design:
 {{< typography font="Lato:wght@100" size="0px">}}
 {{< /typography >}}
 {{< typography font="Lato" size="26px" weight="100">}}
-The pieces in this collection were created to commemorate previous projects and achievements that are dear to me. Using the stochastic lattice model implemented by kinetic Monte Carlo, one can synthesize the following collection of pieces. [Music credit: <a href="https://www.youtube.com/watch?v=2zl0l1nttD8">Willy Wonka & The Chocolate Factory (Piano Cover by Holly Henry)</a>
+The pieces in this collection were created to commemorate previous projects and achievements that are dear to me. Using the stochastic lattice model implemented by kinetic Monte Carlo, one can synthesize the following collection of pieces. [Music credit: <a href="https://www.youtube.com/watch?v=2zl0l1nttD8">Willy Wonka & The Chocolate Factory (Covered by Holly Henry)</a>
 {{< /typography >}}
 <br><br>
