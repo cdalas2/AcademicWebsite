@@ -1,9 +1,9 @@
 [build]
-  command = "HUGO_VERSION=0.108.0 hugo --gc --minify -b $URL"
+  command = "HUGO_VERSION=0.108.0+extended hugo --gc --minify -b $URL"
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.108.0"
+  HUGO_VERSION = "0.108.0+extended"
   HUGO_ENABLEGITINFO = "true"
 
 [context.production.environment]
