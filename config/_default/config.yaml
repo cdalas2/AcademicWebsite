@@ -27,6 +27,7 @@ module:
     - path: github.com/Chrede88/wowchemy-widget-experience-two-column
     - path: github.com/cdalas2/wowchemy-widget-about-avatar-caption
     - path: github.com/cdalas2/wowchemy-widget-about-slider-two-column
+    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-reveal
 
 ############################
 ## ADVANCED
