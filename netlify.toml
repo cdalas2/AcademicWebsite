@@ -1,5 +1,5 @@
 [build]
-  command = "HUGO_VERSION=0.108.0+extended hugo --gc --minify -b $URL"
+  command = "hugo --gc --minify -b $URL"
   publish = "public"
 
 [build.environment]
