@@ -40,7 +40,7 @@ design:
 #    image_parallax: true
 #    # Text color (true=light, false=dark, or remove for the dynamic theme color).
 #    text_color_light: true
-video_column_title: 'Cool TV'
+video_column_title: 'Youtube API'
 # recent_title: 'Recent Activity'
 content:
   slides:
