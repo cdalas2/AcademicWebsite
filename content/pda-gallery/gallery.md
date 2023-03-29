@@ -42,7 +42,8 @@ design:
 {{< typography font="Lato:wght@100" size="0px">}}
 {{< /typography >}}
 {{< typography font="Lato" size="26px" weight="100">}}
-[Project idea: What if you could generate pieces such as this using merely natural language? We may be able to use ChatGPT's (and may Whisper's) API to collect details about a scene and generate the output with particle diffusion. From natural language to pure imagination... Keep tuning in to check on my progress!]
+[Project idea: What if you could generate animations such as this using natural language? We may be able to use ChatGPT's (and Whisper's) API to collect details about a scene and generate the output with diffusing particles.
+
 <br>
 The pieces in this collection were created to commemorate previous projects and achievements that are dear to me. Using the stochastic lattice model implemented by kinetic Monte Carlo, one can synthesize the following collection of pieces. [Music credit: <a href="https://www.youtube.com/watch?v=2zl0l1nttD8">Willy Wonka & The Chocolate Factory (Covered by Holly Henry)]</a>
 {{< /typography >}}

@@ -63,5 +63,5 @@ Our temperature dependent membrane mechanical model suggests that <i>E. coli</i>
 {{< /typography >}}
 <br>
 {{< typography font="Roboto Serif" size="23px" weight="100">}}
-We are in the process of finalizing our results in manuscript. Stay tuned for updates on progress in our manuscript.
+We are in the process of finalizing our results in manuscript.
 {{< /typography >}}
