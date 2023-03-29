@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /content/pda-gallery/Pure_Imagination.mp3
+Disallow: /public/uploads/RESUME_CDA.pdf
+
