@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Physical principles of membrane mechanics, membrane domain formation, and cellular signal transduction.
+title: Physical principles of membrane mechanics, membrane domain formation, and cellular signal transduction
 subtitle: ''
 summary: ''
 authors:
@@ -31,12 +31,11 @@ publishDate: '2023-12-11T07:36:03.270566Z'
 publication_types:
 - '0'
 abstract: ''
-publication: '*(PhD Dissertation)*'
-doi: 10.1017/jfm.2020.1043
+publication: '*University of Southern California Libraries.* (*Dissertation*)'
 
-url_pdf: 'https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/swimming-of-microorganisms-in-quasitwodimensional-membranes/FAE95F950CDF3D540F15EEF2F603076C/share/511c2fc65b179ffc57591993ec655f2e24b63b24'
+url_pdf: 'https://www.cdalas.com/uploads/Dissertation.pdf'
 
 links:
 - name: URL
-  url: 'https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/swimming-of-microorganisms-in-quasitwodimensional-membranes/FAE95F950CDF3D540F15EEF2F603076C'
+  url: 'https://digitallibrary.usc.edu/Archive/University-of-Southern-California-Dissertations-and-Theses-2A3BF1O15Q2?Flat=1#/SearchResult&VBID=2A3BXZ8MRRYYO&PN=1&WS=SearchResults'
 ---
