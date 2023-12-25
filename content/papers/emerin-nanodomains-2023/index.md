@@ -1,11 +1,11 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Stochastic lattice model for emerin nanodomains
+title: Physical mechanism for the self-assembly of emerin nanodomains at the inner nuclear membrane
 subtitle: ''
 summary: ''
 authors:
-- C. D. Alas and C. A. Haselwandter
+- C. D. Alas, L. Wu, F. Pinaud C. A. Haselwandter
 tags:
 categories: []
 date: '2023-03-10'
