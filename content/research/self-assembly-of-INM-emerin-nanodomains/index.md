@@ -1,6 +1,6 @@
 ---
 type: widget_page
-title: 'Self-assembly of INM emerin nanodomains model'
+title: 'Self assembly of INM emerin nanodomains'
 summary: 'We are developing a stochastic model to explore the organization of emerin protein on the nuclear membrane'
 date: "2022-08-05T00:00:00Z"
 
