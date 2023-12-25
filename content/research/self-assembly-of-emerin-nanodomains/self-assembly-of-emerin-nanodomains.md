@@ -27,7 +27,7 @@ weight: 10
 <br>
 <center>
 {{< typography font="Roboto Serif" size="26px">}}
-  Self-assembly of INM emerin nanodomains
+  Self-assembly of emerin nanodomains
 {{< /typography >}}
 </center>
 <img src="StochasticLatticeModel_ProteinDomains.png">

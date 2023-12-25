@@ -10,9 +10,9 @@ main:
   - name: Research
     identifier: research
     weight: 10
-  - name: Stochastic lattice model for emerin nanodomains
+  - name: Self-assembly of emerin nanodomains
     parent: research
-    url: /research/stochastic-lattice-model-for-emerin-nanodomains/
+    url: /research/self-assembly-of-emerin-nanodomains/
     weight: 10
   - name: Thermosensing through membrane mechanics
     parent: research
