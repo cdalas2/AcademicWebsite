@@ -54,3 +54,7 @@ weight: 10
 {{< typography font="Roboto Serif" size="23px" weight="100">}} 
  We developed a physical model of the self-assembly of emerin nanodomains at the INM based on the Turing mechanism. Our model serves three related purposes: (a) to explain how WT emerin nanodomains form when no force is applied, (b) to predict how WT emerin nanodomain properties change under force application based on experimental data on changes in emerin diffusion under force application, and (c) to trace observed changes in emerin organization in mutated forms of emerin to changes in key reaction or diffusion processes. 
 {{< /typography >}}
+<br>
+{{< typography font="Roboto Serif" size="23px" weight="100">}}
+We are in the process of finalizing our results in manuscript.
+{{< /typography >}}
