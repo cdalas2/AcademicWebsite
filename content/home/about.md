@@ -45,7 +45,7 @@ video_column_title: 'Youtube API'
 content:
   slides:
     - title: '<br><br><br><p style = "font-size: 24px"><b>[Self-assembly of emerin nanodomains](/research/self-assembly-of-emerin-nanodomains)</b></p>'
-      content: '<p style = "font-size: 16px; color: white;">Can we use a stochastic lattice model to study how defective emerin organization and self-assembly can lead to muscle degenerative diseases?</p>'
+      content: '<p style = "font-size: 16px; color: white;">Could the morphogenesis of Emery-Dreifuss muscular dystrophy disease be traced back to a Turing instability perturbed by mutations in emerin?</p>'
       align: left
       background:
         position: top
@@ -54,7 +54,7 @@ content:
         media: StochasticLatticeModel_ProteinDomains.png
         fit: contain
     - title: '<br><br><br><p style = "font-size: 24px"><b>[Thermosensing through membrane mechanics](/research/thermosensing-through-membrane-mechanics)</b></p>'
-      content: '<p style = "font-size: 16px; color: white;">Can a temperature-dependent protein-bilayer mechanical model account for the temperature sensing of cells?</p>'
+      content: '<p style = "font-size: 16px; color: white;">Can the alterations in membrane mechanical properties due to changing temperature be utilized by cells to sense temperature?</p>'
       align: left
       background:
         position: top
@@ -63,7 +63,7 @@ content:
         media: thermosensing_cover.png
         fit: contain
     - title: '<br><br><br><p style = "font-size: 24px"><b>[Protein-induced bilayer deformations](/research/protein-induced-bilayer-deformations)</b></p>'
-      content: '<p style = "font-size: 16px; color: white;">How can we calculate bilayer deformations due to the protein shapes obtained from structural biology?</p>'
+      content: '<p style = "font-size: 16px; color: white;">How can protein shape impact protein-membrane interactions and the stabilization of protein conformational states?</p>'
       align: left
       background:
         position: top
