@@ -44,7 +44,7 @@ video_column_title: 'Youtube API'
 # recent_title: 'Recent Activity'
 content:
   slides:
-    - title: '<br><br><br><p style = "font-size: 24px"><b>[Stochastic lattice model for emerin nanodomains](/research/stochastic-lattice-model-for-emerin-nanodomains)</b></p>'
+    - title: '<br><br><br><p style = "font-size: 24px"><b>[Self-assembly of emerin nanodomains](/research/self-assembly-of-emerin-nanodomains)</b></p>'
       content: '<p style = "font-size: 16px; color: white;">Can we use a stochastic lattice model to study how defective emerin organization and self-assembly can lead to muscle degenerative diseases?</p>'
       align: left
       background:
