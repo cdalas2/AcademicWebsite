@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Physical mechanism for the self-assembly of emerin nanodomains at the inner nuclear membrane
+title: Diffusion-driven self-assembly of emerin nanodomains at the nuclear envelope
 subtitle: ''
 summary: ''
 authors:
@@ -31,5 +31,5 @@ publishDate: '2023-12-30T07:36:03.270566Z'
 publication_types:
 - '0'
 abstract: ''
-publication: '*(in preparation)*'
+publication: '*(in peer review)*'
 ---
