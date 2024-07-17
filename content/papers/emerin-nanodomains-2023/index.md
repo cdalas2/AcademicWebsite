@@ -5,7 +5,7 @@ title: Diffusion-driven self-assembly of emerin nanodomains at the nuclear envel
 subtitle: ''
 summary: ''
 authors:
-- C. D. Alas, L. Wu, F. Pinaud C. A. Haselwandter
+- C. D. Alas, L. Wu, F. Pinaud, and C. A. Haselwandter
 tags:
 categories: []
 date: '2024-7-16'
