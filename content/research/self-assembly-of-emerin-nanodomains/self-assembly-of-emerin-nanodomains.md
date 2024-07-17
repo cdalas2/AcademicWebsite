@@ -56,5 +56,5 @@ weight: 10
 {{< /typography >}}
 <br>
 {{< typography font="Roboto Serif" size="23px" weight="100">}}
-Our manuscript is currently in peer review.
+Our manuscript is currently in peer review. We've uploaded a copy of our submission to <a href='https://arxiv.org/abs/2407.11758'>arXiv</a> for previewing [Alas et. al., 2024].
 {{< /typography >}}
