@@ -8,7 +8,7 @@ authors:
 - C. D. Alas, O. Kahraman, and C. A. Haselwandter
 tags:
 categories: []
-date: '2024-12-31'
+date: '2024-7-16'
 lastmod: 2022-09-09T00:36:03-07:00
 featured: false
 draft: false
@@ -27,7 +27,7 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2024-12-31T07:36:03.270566Z'
+publishDate: '2024-7-16T08:36:03.270566Z'
 publication_types:
 - '0'
 abstract: ''
