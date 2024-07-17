@@ -56,5 +56,5 @@ weight: 10
 {{< /typography >}}
 <br>
 {{< typography font="Roboto Serif" size="23px" weight="100">}}
-We are in the process of finalizing our results in manuscript.
+Our manuscript is currently in peer review.
 {{< /typography >}}
