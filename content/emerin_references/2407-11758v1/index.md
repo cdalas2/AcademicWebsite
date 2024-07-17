@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Emerin self-assembly and nucleoskeletal coupling regulate nuclear envelope mechanics against stress
+title: Diffusion-driven self-assembly of emerin nanodomains at the nuclear envelope
 subtitle: ''
 summary: ''
 authors:
